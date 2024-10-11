@@ -4,7 +4,7 @@ import uvicorn
 from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
 
-from api.users.controllers.products_controller import products_router
+from api.products.controllers.products_controller import products_router
 from api.users.controllers.users_controller import users_router
 from core.config import settings
 

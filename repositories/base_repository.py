@@ -61,15 +61,15 @@ class BaseRepository(Generic[DBModel]):
         for user in users_list:
             validated_user = self._entity_model.model_validate(user)
             all_users.append(validated_user)
+        if not all_users:
+            return None
         print(f'All users found in service: {all_users}')
         return all_users
 
     async def update_user(self, user_id: str, update_data: dict) -> DBModel:
         print('Updating some user data by id in repository')
-        user_found = await self.collection.find_one({"_id": user_id})
-        if not user_found:
-            return None
         update_data_filtered = {k: v for k, v in update_data.items() if v is not None}
+        update_data_filtered["update_at"] = datetime.utcnow()
         await self.collection.update_one({"_id": user_id}, {"$set": update_data_filtered})
         user_updated = await self.collection.find_one({"_id": user_id})
         print(f'User updated some data by id in repository: {user_updated}')
@@ -77,14 +77,9 @@ class BaseRepository(Generic[DBModel]):
 
     async def update_all_user(self, user_id: str, user_data: dict) -> DBModel:
         print('Updating all user by id in repository')
-        user_found = await self.collection.find_one({"_id": user_id})
-        if not user_found:
-            return None
+        user_data["_id"] = user_id
         validated_user = self._entity_model.model_validate(user_data)
-        validated_user.id = user_found.get("_id")
-        validated_user.create_at = user_found.get("create_at")
-        validated_user.update_at = datetime.utcnow()
-        await self.collection.replace_one({"_id": user_id}, validated_user.model_dump(by_alias=True))
+        await self.collection.replace_one({"_id": user_id}, validated_user.model_dump(exclude={"id"}))
         user_all_updated = await self.collection.find_one({"_id": user_id})
         print(f'User all updated by id in repository: {user_all_updated}')
         return self._entity_model.model_validate(user_all_updated)
@@ -92,7 +87,8 @@ class BaseRepository(Generic[DBModel]):
     async def deactivate_user(self, user_id: str, user_data: dict) -> DBModel:
         print('Deactivating user by id in repository')
         user_by_update = await self.collection.update_one({"_id": user_id},
-                                                          {"$set": {"is_deleted": user_data['is_deleted']}})
+                                                          {"$set": {"is_deleted": user_data['is_deleted'],
+                                                                    "update_at": datetime.utcnow()}})
         if not user_by_update:
             return None
         user_deactivated = await self.collection.find_one({"_id": user_id})
@@ -142,15 +138,15 @@ class BaseRepository(Generic[DBModel]):
         for product in products_list:
             validated_product = self._entity_model.model_validate(product)
             all_products.append(validated_product)
+        if not all_products:
+            return None
         print(f'All products found in service: {all_products}')
         return all_products
 
     async def update_product(self, product_code: int, update_data: dict) -> DBModel:
         print('Updating some product data by code in repository')
-        product_found = await self.collection.find_one({"product_code": product_code})
-        if not product_found:
-            return None
         update_data_filtered = {k: v for k, v in update_data.items() if v is not None}
+        update_data_filtered["update_at"] = datetime.utcnow()
         await self.collection.update_one({"product_code": product_code}, {"$set": update_data_filtered})
         product_updated = await self.collection.find_one({"product_code": product_code})
         print(f'Product updated some data by code in repository: {product_updated}')
@@ -158,14 +154,8 @@ class BaseRepository(Generic[DBModel]):
 
     async def update_all_product(self, product_code: int, product_data: dict) -> DBModel:
         print('Updating all product by code in repository')
-        product_found = await self.collection.find_one({'product_code': product_code})
-        if not product_found:
-            return None
         validated_product = self._entity_model.model_validate(product_data)
-        validated_product.id = product_found.get("_id")
-        validated_product.create_at = product_found.get("create_at")
-        validated_product.update_at = datetime.utcnow()
-        await self.collection.replace_one({"product_code": product_code}, validated_product.model_dump(by_alias=True))
+        await self.collection.replace_one({"product_code": product_code}, validated_product.model_dump(exclude={"id"}))
         product_all_updated = await self.collection.find_one({"product_code": product_code})
         print(f'Product all updated by code in repository: {product_all_updated}')
         return self._entity_model.model_validate(product_all_updated)
@@ -173,7 +163,8 @@ class BaseRepository(Generic[DBModel]):
     async def deactivate_product(self, product_code: int, product_data: dict) -> DBModel:
         print('Deactivating product by code in repository')
         product_by_update = await self.collection.update_one({"product_code": product_code},
-                                                             {"$set": {"is_deleted": product_data['is_deleted']}})
+                                                             {"$set": {"is_deleted": product_data['is_deleted'],
+                                                                       "update_at": datetime.utcnow()}})
         if not product_by_update:
             return None
         product_deactivated = await self.collection.find_one({"product_code": product_code})

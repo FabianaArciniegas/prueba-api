@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from api.users.schemas.inputs import UserInput, PatchUserInput, UserBasic
@@ -15,6 +17,9 @@ class UsersService:
 
     async def create_user(self, user_input: UserInput):
         print('Creating user in service')
+        user_found = await self.users_repository.get_user_by_username(user_input.username)
+        if user_found:
+            raise ValueError('There is already a user with that username')
         hashed_password = await self.password_hasher(user_input.password)
         user_data = user_input.model_dump()
         user_data['hashed_password'] = hashed_password
@@ -43,11 +48,16 @@ class UsersService:
     async def get_all_users(self) -> list[UsersModel]:
         print('Getting all users in service')
         all_users = await self.users_repository.get_all_users()
+        if all_users is None:
+            raise ValueError("There are no users")
         print(f'All users found in service: {all_users}')
         return all_users
 
     async def update_user(self, user_id: str, update_data: PatchUserInput) -> UsersModel:
         print('Updating some user data by id in service')
+        user_by_update = await self.users_repository.get_user_by_id(user_id)
+        if user_by_update is None:
+            raise ValueError("User not found")
         user_updated = await self.users_repository.update_user(user_id, update_data.model_dump())
         if user_updated is None:
             raise ValueError("User not updated")
@@ -59,6 +69,7 @@ class UsersService:
         user = await self.users_repository.get_user_by_id(user_id)
         if user is None:
             raise ValueError("User not found")
+        user.update_at = datetime.utcnow()
         user.username = update_user.username
         user.email = update_user.email
         user.full_name = update_user.full_name
@@ -82,6 +93,9 @@ class UsersService:
 
     async def delete_user(self, user_id: str):
         print('Deleting user by id in service')
+        user_by_delete = await self.users_repository.get_user_by_id(user_id)
+        if user_by_delete is None:
+            raise ValueError("User not found")
         user_deleted = await self.users_repository.delete_user(user_id)
         if user_deleted is None:
             raise ValueError("User not deleted")

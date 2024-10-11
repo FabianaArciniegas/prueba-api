@@ -157,7 +157,7 @@ async def delete_user(
         request: Request,
         response: Response,
         user_id: str
-) -> UsersModel:
+):
     print('Deleting user by id in controller')
     user_service = UsersService(request.app.database)
     try:

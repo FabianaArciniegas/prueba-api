@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request, Response, HTTPException
 
-from api.users.schemas.inputs import ProductInput, PatchProductInput
-from api.users.services.products_services import ProductsService
+from api.products.schemas.inputs import ProductInput, PatchProductInput
+from api.products.services.products_services import ProductsService
 from models.products import ProductsModel
 
 products_router: APIRouter = APIRouter(prefix="/products")
