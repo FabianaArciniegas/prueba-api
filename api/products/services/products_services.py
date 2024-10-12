@@ -1,5 +1,4 @@
 from datetime import datetime
-from itertools import product
 
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
