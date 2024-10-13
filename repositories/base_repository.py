@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-from typing import TypeVar, Generic, Type
+from typing import TypeVar, Generic, Type, Any
 
 from motor.motor_asyncio import AsyncIOMotorDatabase, AsyncIOMotorCollection
 from pydantic import BaseModel
@@ -26,70 +26,66 @@ class BaseRepository(Generic[DBModel]):
         else:
             return data
 
-    async def create(self, data: dict, session=None) -> DBModel:
-        print(f'Creating in repository')
+    async def create(self, data: dict, raise_exception: bool = True, session=None) -> DBModel:
+        print(f'Creating in instance, data: {data}')
         document_created = self._entity_model.model_validate(data)
-        if not document_created:
-            return None
         data_parsed_enums = self.convert_enum_values(document_created.model_dump())
         data_parsed_enums["_id"] = data_parsed_enums.pop("id")
+
         await self.collection.insert_one(data_parsed_enums, session=session)
-        print(f'Created in repository: {document_created}')
+        if not document_created and raise_exception:
+            raise ValueError("Instance not created")
+        print(f'Instance created: {document_created}')
         return document_created
 
-    async def get(self, field_name: str, field_value: str | int) -> DBModel:
-        print('Getting in repository')
-        document_found = await self.collection.find_one({field_name: field_value})
-        if not document_found:
-            return None
-        print(f'Found in repository: {document_found}')
+    async def get_by_id(self, _id: str, raise_exception: bool = True) -> DBModel | None:
+        print('Getting in instance')
+        document_found = await self.collection.find_one({"_id": _id, "is_deleted": False})
+        if not document_found and raise_exception:
+            raise ValueError("Instance not found")
+        print(f'Instance found: {document_found}')
         return self._entity_model.model_validate(document_found)
 
-    async def get_all(self, field_name: str, field_value: bool) -> list[DBModel]:
-        print('Getting all in repository')
-        documents_found = self.collection.find({field_name: field_value})
+    async def get_all(self, raise_exception: bool = True) -> list[DBModel]:
+        print('Getting all instances')
+        documents_found = self.collection.find({"is_deleted": False})
         documents_list = await documents_found.to_list(None)
-        if not documents_list:
-            return None
+        if not documents_list and raise_exception:
+            raise ValueError("There are no products")
         all_documents = []
         for document in documents_list:
             validated_document = self._entity_model.model_validate(document)
             all_documents.append(validated_document)
-        print(f'All documents found in repository: {all_documents}')
+        print(f'All instances found: {all_documents}')
         return all_documents
 
-    async def update(self, field_name: str, field_value: str | int, update_data: dict) -> DBModel:
-        print('Updating some document data in repository')
+    async def update(self, _id: str, update_data: dict) -> DBModel:
+        print('Updating instance data')
         update_data_filtered = {k: v for k, v in update_data.items() if v is not None}
         update_data_filtered["update_at"] = datetime.utcnow()
-        await self.collection.update_one({field_name: field_value}, {"$set": update_data_filtered})
-        document_updated = await self.collection.find_one({field_name: field_value})
-        print(f'User updated document data in repository: {document_updated}')
+        await self.collection.update_one({"_id": _id}, {"$set": update_data_filtered})
+        document_updated = await self.collection.find_one({"_id": _id})
+        print(f'Instance updated data: {document_updated}')
         return self._entity_model.model_validate(document_updated)
 
-    async def update_all(self, field_name: str, field_value: str | int, update_data: dict) -> DBModel:
-        print('Updating all document in repository')
-        validated_document = self._entity_model.model_validate(update_data)
-        await self.collection.replace_one({field_name: field_value}, validated_document.model_dump(exclude={"id"}))
-        document_all_updated = await self.collection.find_one({field_name: field_value})
-        print(f'Document all updated in repository: {document_all_updated}')
+    async def update_all(self, _id: str, product_data: dict) -> DBModel:
+        print('Updating instance all data')
+        validated_document = self._entity_model.model_validate(product_data)
+        await self.collection.replace_one({"_id": _id}, validated_document.model_dump(exclude={"id"}))
+        document_all_updated = await self.collection.find_one({"_id": _id})
+        print(f'Instance updated all data: {document_all_updated}')
         return self._entity_model.model_validate(document_all_updated)
 
-    async def deactivate(self, field_name: str, field_value: str | int, update_data: dict) -> DBModel:
-        print('Deactivating document in repository')
-        document_by_update = await self.collection.update_one({field_name: field_value},
-                                                              {"$set": {"is_deleted": update_data['is_deleted'],
-                                                                        "update_at": datetime.utcnow()}})
-        if not document_by_update:
-            return None
-        document_deactivated = await self.collection.find_one({field_name: field_value})
-        print(f'Document deactivated in repository: {document_deactivated}')
-        return self._entity_model.model_validate(document_deactivated)
+    async def disable(self, _id: str, update_data: dict) -> DBModel:
+        print('Deactivating instance')
+        await self.collection.update_one({"_id": _id}, {
+            "$set": {"is_deleted": update_data['is_deleted'], "update_at": datetime.utcnow()}})
+        document_disabled = await self.collection.find_one({"_id": _id})
+        print(f'Instance disabled: {document_disabled}')
+        return self._entity_model.model_validate(document_disabled)
 
-    async def delete(self, field_name: str, field_value: str | int):
-        print('Deleting document in repository')
-        document_deleted = await self.collection.find_one_and_delete({field_name: field_value})
-        if not document_deleted:
-            return None
-        print(f'Document deleted in repository: {document_deleted}')
+    async def delete(self, _id: str):
+        print('Deleting instance')
+        document_deleted = await self.collection.find_one_and_delete({"_id": _id})
+        print(f'Instance deleted: {document_deleted}')
         return self._entity_model.model_validate(document_deleted)

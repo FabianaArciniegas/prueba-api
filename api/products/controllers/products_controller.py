@@ -16,54 +16,34 @@ async def create_product(
         request: Request,
         response: Response,
         product_input: ProductInput
-) -> ProductInput:
+) -> ProductsModel:
     print('Creating product in controller')
     product_service = ProductsService(request.app.database)
     try:
         product_created = await product_service.create_product(product_input)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product created in controller: {product_created}')
+    print(f'Product created in controller')
     return product_created
 
 
 @products_router.get(
-    path="/productname/{product_name}",
+    path="/{product_id}",
     tags=["products"],
-    description="Get a product by name",
+    description="Get a product by id",
 )
-async def get_product_by_name(
+async def get_product_by_id(
         request: Request,
         response: Response,
-        product_name: str
+        product_id: str
 ) -> ProductsModel:
-    print('Getting product by name in controller')
+    print('Getting product in controller')
     product_service = ProductsService(request.app.database)
     try:
-        product_found = await product_service.get_product_by_name(product_name)
+        product_found = await product_service.get_product_by_id(product_id)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product found by name in controller: {product_found}')
-    return product_found
-
-
-@products_router.get(
-    path="/code/{product_code}",
-    tags=["products"],
-    description="Get a product by code",
-)
-async def get_product_by_code(
-        request: Request,
-        response: Response,
-        product_code: int
-) -> ProductsModel:
-    print('Getting product by code in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_found = await product_service.get_product_by_code(product_code)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product found by code in controller: {product_found}')
+    print(f'Product found in controller')
     return product_found
 
 
@@ -82,87 +62,87 @@ async def get_all_products(
         all_products = await product_service.get_all_products()
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'All products found in controller: {all_products}')
+    print(f'All products found in controller')
     return all_products
 
 
 @products_router.patch(
-    path="/update/{product_code}",
+    path="/update/{product_id}",
     tags=["products"],
-    description="Update some product data by code",
+    description="Update some product data",
 )
 async def update_product(
         request: Request,
         response: Response,
-        product_code: int,
+        product_id: str,
         update_data: PatchProductInput
 ) -> ProductsModel:
-    print('Updating some product data by code in controller')
+    print('Updating some product data in controller')
     product_service = ProductsService(request.app.database)
     try:
-        product_updated = await product_service.update_product(product_code, update_data)
+        product_updated = await product_service.update_product(product_id, update_data)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product updated some data by code in controller: {product_updated}')
+    print(f'Product updated some data in controller')
     return product_updated
 
 
 @products_router.put(
-    path="/updateall/{product_code}",
+    path="/updateall/{product_id}",
     tags=["products"],
-    description="Update all product by code",
+    description="Update all product",
 )
 async def update_all_product(
         request: Request,
         response: Response,
-        product_code: int,
-        update_all_product: ProductInput
+        product_id: str,
+        product_data: ProductInput
 ) -> ProductsModel:
-    print('Updating all product by code in controller')
+    print('Updating all product in controller')
     product_service = ProductsService(request.app.database)
     try:
-        product_all_updated = await product_service.update_all_product(product_code, update_all_product)
+        product_all_updated = await product_service.update_all_product(product_id, product_data)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product all updated by code in controller: {product_all_updated}')
+    print(f'Product all updated in controller')
     return product_all_updated
 
 
 @products_router.patch(
-    path="/isdeleted/{product_code}",
+    path="/disable/{product_id}",
     tags=["products"],
-    description="Deactivate product by code",
+    description="Disable product",
 )
-async def deactivate_product(
+async def disable_product(
         request: Request,
         response: Response,
-        product_code: int
+        product_id: str
 ) -> ProductsModel:
-    print('Deactivating product by code in controller')
+    print('Disabling product in controller')
     product_service = ProductsService(request.app.database)
     try:
-        product_disabled = await product_service.deactivate_product(product_code)
+        product_disabled = await product_service.disable_product(product_id)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product disabled by code in controller: {product_disabled}')
+    print(f'Product disabled in controller')
     return product_disabled
 
 
 @products_router.delete(
-    path="/delete/{product_code}",
+    path="/delete/{product_id}",
     tags=["products"],
-    description="Delete product by code",
+    description="Delete product",
 )
 async def delete_product(
         request: Request,
         response: Response,
-        product_code: int
+        product_id: str
 ) -> ProductsModel:
-    print('Deleting product by code in controller')
+    print('Deleting product in controller')
     product_service = ProductsService(request.app.database)
     try:
-        product_deleted = await product_service.delete_product(product_code)
+        product_deleted = await product_service.delete_product(product_id)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product deleted by code in controller: {product_deleted}')
+    print(f'Product deleted in controller')
     return product_deleted

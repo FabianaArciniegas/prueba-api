@@ -23,32 +23,12 @@ async def create_user(
         user_created = await user_service.create_user(user_input)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'User created in controller: {user_created}')
+    print(f'User created in controller')
     return user_created
 
 
 @users_router.get(
-    path="/username/{username}",
-    tags=["users"],
-    description="Get user by username",
-)
-async def get_user_by_username(
-        request: Request,
-        response: Response,
-        username: str
-) -> UsersModel:
-    print('Getting user by username in controller')
-    user_service = UsersService(request.app.database)
-    try:
-        user_found = await user_service.get_user_by_username(username)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'User found by username in controller: {user_found}')
-    return user_found
-
-
-@users_router.get(
-    path="/id/{user_id}",
+    path="/{user_id}",
     tags=["users"],
     description="Get user by id",
 )
@@ -57,13 +37,13 @@ async def get_user_by_id(
         response: Response,
         user_id: str
 ) -> UsersModel:
-    print('Getting user by id in controller')
+    print('Getting user in controller')
     user_service = UsersService(request.app.database)
     try:
         user_found = await user_service.get_user_by_id(user_id)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'User found by id in controller: {user_found}')
+    print(f'User found in controller')
     return user_found
 
 
@@ -82,14 +62,14 @@ async def get_all_users(
         all_users = await user_service.get_all_users()
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'All users found in controller: {all_users}')
+    print(f'All users found in controller')
     return all_users
 
 
 @users_router.patch(
     path="/update/{user_id}",
     tags=["users"],
-    description="Update some user data by id",
+    description="Update some user data",
 )
 async def update_user(
         request: Request,
@@ -97,72 +77,72 @@ async def update_user(
         user_id: str,
         update_data: PatchUserInput
 ) -> UsersModel:
-    print('Updating some user data by id in controller')
+    print('Updating some user data in controller')
     user_service = UsersService(request.app.database)
     try:
         user_updated = await user_service.update_user(user_id, update_data)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'User updated some data by id in controller: {user_updated}')
+    print(f'User updated some data in controller: {user_updated}')
     return user_updated
 
 
 @users_router.put(
     path="/updateall/{user_id}",
     tags=["users"],
-    description="Update all user by id",
+    description="Update all user",
 )
 async def update_all_user(
         request: Request,
         response: Response,
         user_id: str,
-        update_all_user: UserBasic
+        user_data: UserBasic
 ) -> UsersModel:
-    print('Updating all user by id in controller')
+    print('Updating all user in controller')
     user_service = UsersService(request.app.database)
     try:
-        user_all_updated = await user_service.update_all_user(user_id, update_all_user)
+        user_all_updated = await user_service.update_all_user(user_id, user_data)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'User all updated by id in controller: {user_all_updated}')
+    print(f'User all updated in controller: {user_all_updated}')
     return user_all_updated
 
 
 @users_router.patch(
-    path="/isdeleted/{user_id}",
+    path="/disable/{user_id}",
     tags=["users"],
-    description="Deactivate user by id",
+    description="Disable user",
 )
-async def deactivate_user(
+async def disable_user(
         request: Request,
         response: Response,
         user_id: str
 ) -> UsersModel:
-    print('Deactivating user by id in controller')
+    print('Disabling user in controller')
     user_service = UsersService(request.app.database)
     try:
-        user_disabled = await user_service.deactivate_user(user_id)
+        user_disabled = await user_service.disable_user(user_id)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'User disabled by id in controller: {user_disabled}')
+    print(f'User disabled in controller: {user_disabled}')
     return user_disabled
 
 
 @users_router.delete(
     path="/delete/{user_id}",
     tags=["users"],
-    description="Delete user by id",
+    description="Delete user",
 )
 async def delete_user(
         request: Request,
         response: Response,
         user_id: str
 ):
-    print('Deleting user by id in controller')
+    print('Deleting user in controller')
     user_service = UsersService(request.app.database)
     try:
         user_deleted = await user_service.delete_user(user_id)
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
-    print(f'User deleted by id in controller: {user_deleted}')
+    print(f'User deleted in controller: {user_deleted}')
     return user_deleted
