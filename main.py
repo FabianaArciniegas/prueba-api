@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
 
 from api.products.controllers.products_controller import products_router
+from api.router import routes
 from api.users.controllers.users_controller import users_router
 from core.config import settings
 
@@ -23,8 +24,8 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-app.include_router(users_router, prefix=settings.API_STR)
-app.include_router(products_router, prefix=settings.API_STR)
+for route in routes:
+    app.include_router(route, prefix=settings.API_STR)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
