@@ -1,11 +1,11 @@
-from fastapi import APIRouter, Request, Response, HTTPException
+from fastapi import APIRouter, Request, Response, Depends
 from logger_uuid import Logger
 
-from api.users.schemas.inputs import UserInput, PatchUserInput, UserBasic
+from api.users.schemas.inputs import UserInput, UserBasic
 from api.users.services.users_services import UsersService
-from core.errors import InvalidParameterError
-from core.response import response_handler
-from models.response_model import ResponseModel, StatusCode, LocationError
+from core.api_response import ApiResponse
+from core.exception_handler import exception_handler
+from models.response_model import ResponseModel, StatusCode
 from models.users import UsersModel
 
 users_router: APIRouter = APIRouter(prefix="/users")
@@ -16,7 +16,7 @@ users_router: APIRouter = APIRouter(prefix="/users")
     tags=["users"],
     description="Create a new user",
 )
-@response_handler(status_code=StatusCode.OK)
+@exception_handler(status_code=StatusCode.OK)
 async def create_user(
         request: Request,
         response: Response,
@@ -36,16 +36,17 @@ async def create_user(
     tags=["users"],
     description="Get user by id",
 )
-@response_handler()
+@exception_handler()
 async def get_user_by_id(
         request: Request,
         response: Response,
-        user_id: str
+        user_id: str,
+        api_response=Depends(ApiResponse),
 ) -> ResponseModel[UsersModel]:
-    print('Getting user in controller')
-    user_service = UsersService(request.app.database)
+    api_response.logger.log_info('Getting user in controller')
+    user_service = UsersService(request.app.database, api_response)
     user_found = await user_service.get_user_by_id(user_id)
-    print(f'User found in controller')
+    api_response.logger.log_info(f'User found in controller')
     return user_found
 
 #

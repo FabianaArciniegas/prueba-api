@@ -3,13 +3,15 @@ from datetime import datetime
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from api.users.schemas.inputs import UserInput, PatchUserInput, UserBasic
+from core.api_response import ApiResponse
 from models.users import UsersModel
 from repositories.users import UsersRepository
 
 
 class UsersService:
-    def __init__(self, db: AsyncIOMotorDatabase):
+    def __init__(self, db: AsyncIOMotorDatabase, api_response: ApiResponse):
         self.db = db
+        self.api_response = api_response
         self.users_repository = UsersRepository(self.db)
 
     async def password_hasher(self, raw_password: str):
@@ -27,9 +29,9 @@ class UsersService:
         return user_created
 
     async def get_user_by_id(self, user_id: str) -> UsersModel:
-        print('Getting user in db')
+        self.api_response.logger.log_info('Getting user in db')
         user_found = await self.users_repository.get_by_id(user_id)
-        print(f'User found in service')
+        self.api_response.logger.log_info(f'User found in service')
         return user_found
 
     async def get_all_users(self) -> list[UsersModel]:

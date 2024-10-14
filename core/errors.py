@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 
-from models.response_model import BaseErrorModel, LocationError
+from models.response_model import BaseErrorModel, LocationError, StatusCode
 
 
 class BaseExceptions(Exception):
@@ -12,9 +12,6 @@ class BaseExceptions(Exception):
 
     def __str__(self):
         return f"Error: {self.__class__.__name__} - {self.description} - {self.message}"
-
-    def add_error(self):
-        return BaseErrorModel(description=self.description, message=self.message, location=self.location)
 
 
 class _BaseException(BaseExceptions):
@@ -33,20 +30,25 @@ class _BaseException(BaseExceptions):
 
 
 class InvalidParameterError(_BaseException):
-    status_code = 400
+    status_code = StatusCode.BAD_REQUEST
     description = "Parameter error"
 
 
 class UnauthorizedError(_BaseException):
-    status_code = 401
+    status_code = StatusCode.UNAUTHORIZED
     description = "unauthorized error"
 
 
 class ForbiddenError(_BaseException):
-    status_code = 403
+    status_code = StatusCode.FORBIDDEN
     description = "Unauthorized access"
 
 
 class NotFoundError(_BaseException):
-    status_code = 404
+    status_code = StatusCode.NOT_FOUND
     description = "Object not found"
+
+
+class UnexpectedError(_BaseException):
+    status_code = StatusCode.UNEXPECTED
+    description = "Unexpected error"
