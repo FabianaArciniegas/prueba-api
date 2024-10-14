@@ -1,7 +1,10 @@
 from fastapi import APIRouter, Request, Response, HTTPException
+from logger_uuid import Logger
 
 from api.users.schemas.inputs import UserInput, PatchUserInput, UserBasic
 from api.users.services.users_services import UsersService
+from core.response import response_handler
+from models.response_model import ResponseModel, StatusCode
 from models.users import UsersModel
 
 users_router: APIRouter = APIRouter(prefix="/users")
@@ -11,19 +14,20 @@ users_router: APIRouter = APIRouter(prefix="/users")
     path="",
     tags=["users"],
     description="Create a new user",
+    response_model=ResponseModel
 )
+@response_handler(status_code=StatusCode.CREATED)
 async def create_user(
         request: Request,
         response: Response,
         user_input: UserInput
 ) -> UserBasic:
-    print('Creating user in controller')
+    logger = Logger()
+    logger.log_info('Creating user in controller')
     user_service = UsersService(request.app.database)
-    try:
-        user_created = await user_service.create_user(user_input)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'User created in controller')
+
+    user_created = await user_service.create_user(user_input)
+    logger.log_info(f'User created in controller')
     return user_created
 
 
@@ -31,7 +35,9 @@ async def create_user(
     path="/{user_id}",
     tags=["users"],
     description="Get user by id",
+    response_model=ResponseModel,
 )
+@response_handler()
 async def get_user_by_id(
         request: Request,
         response: Response,
