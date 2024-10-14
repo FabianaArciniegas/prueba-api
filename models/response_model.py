@@ -1,8 +1,10 @@
 from enum import Enum
-from typing import Any
+from typing import Any, TypeVar, Generic, Type
 
 from pydantic import BaseModel
 from starlette import status
+
+DataType = TypeVar('DataType', bound=BaseModel)
 
 
 class LocationError(str, Enum):
@@ -13,15 +15,17 @@ class LocationError(str, Enum):
 class StatusCode(str, Enum):
     OK = "OK"
     CREATED = "CREATED"
+    UNEXPECTED = "UNEXPECTED"
+    NOT_FOUND = "NOT_FOUND"
 
 
-class BaseError(BaseModel):
+class BaseErrorModel(BaseModel):
     description: str
     message: str
     location: LocationError
 
 
-class ResponseModel(BaseModel):
-    status_code: str
-    data: Any
-    errors: BaseError | None = None
+class ResponseModel(BaseModel, Generic[DataType]):
+    status: str
+    data: DataType | None = None
+    errors: BaseErrorModel | None = None

@@ -5,6 +5,9 @@ from typing import TypeVar, Generic, Type, Any
 from motor.motor_asyncio import AsyncIOMotorDatabase, AsyncIOMotorCollection
 from pydantic import BaseModel
 
+from core.errors import NotFoundError
+from models.response_model import LocationError
+
 DBModel = TypeVar('DBModel', bound=BaseModel)
 
 
@@ -42,7 +45,7 @@ class BaseRepository(Generic[DBModel]):
         print('Getting in instance')
         document_found = await self.collection.find_one({"_id": _id, "is_deleted": False})
         if not document_found and raise_exception:
-            raise ValueError("Instance not found")
+            raise NotFoundError(message="Instance not found", location=LocationError.PARAMS)
         print(f'Instance found: {document_found}')
         return self._entity_model.model_validate(document_found)
 
