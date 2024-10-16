@@ -1,8 +1,12 @@
-from fastapi import APIRouter, Request, Response, HTTPException
+from fastapi import APIRouter, Request, Response
+from fastapi.params import Depends
 
 from api.products.schemas.inputs import ProductInput, PatchProductInput
 from api.products.services.products_services import ProductsService
+from core.api_response import ApiResponse
 from models.products import ProductsModel
+from models.response_model import ResponseModel
+from utils.response_handler import response_handler
 
 products_router: APIRouter = APIRouter(prefix="/products")
 
@@ -12,18 +16,18 @@ products_router: APIRouter = APIRouter(prefix="/products")
     tags=["products"],
     description="Create a new product",
 )
+@response_handler()
 async def create_product(
         request: Request,
         response: Response,
-        product_input: ProductInput
-) -> ProductsModel:
-    print('Creating product in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_created = await product_service.create_product(product_input)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product created in controller')
+        product_input: ProductInput,
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel[ProductsModel]:
+    api_response.logger.info('Creating product in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    product_created = await product_service.create_product(product_input)
+    api_response.logger.info(f'Product created in controller')
     return product_created
 
 
@@ -32,18 +36,18 @@ async def create_product(
     tags=["products"],
     description="Get a product by id",
 )
+@response_handler()
 async def get_product_by_id(
         request: Request,
         response: Response,
-        product_id: str
-) -> ProductsModel:
-    print('Getting product in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_found = await product_service.get_product_by_id(product_id)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product found in controller')
+        product_id: str,
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel[ProductsModel]:
+    api_response.logger.info('Getting product in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    product_found = await product_service.get_product_by_id(product_id)
+    api_response.logger.info(f'Product found in controller')
     return product_found
 
 
@@ -52,17 +56,17 @@ async def get_product_by_id(
     tags=["products"],
     description="Get all products",
 )
+@response_handler()
 async def get_all_products(
         request: Request,
         response: Response,
-) -> list[ProductsModel]:
-    print('Getting all products in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        all_products = await product_service.get_all_products()
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'All products found in controller')
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel[list[ProductsModel]]:
+    api_response.logger.info('Getting all products in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    all_products = await product_service.get_all_products()
+    api_response.logger.info(f'All products found in controller')
     return all_products
 
 
@@ -71,40 +75,40 @@ async def get_all_products(
     tags=["products"],
     description="Update some product data",
 )
+@response_handler()
 async def update_product(
         request: Request,
         response: Response,
         product_id: str,
-        update_data: PatchProductInput
-) -> ProductsModel:
-    print('Updating some product data in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_updated = await product_service.update_product(product_id, update_data)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product updated some data in controller')
+        update_data: PatchProductInput,
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel[ProductsModel]:
+    api_response.logger.info('Updating some product data in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    product_updated = await product_service.update_product(product_id, update_data)
+    api_response.logger.info(f'Product updated some data in controller')
     return product_updated
 
 
 @products_router.put(
-    path="/updateall/{product_id}",
+    path="/update-all/{product_id}",
     tags=["products"],
     description="Update all product",
 )
+@response_handler()
 async def update_all_product(
         request: Request,
         response: Response,
         product_id: str,
-        product_data: ProductInput
-) -> ProductsModel:
-    print('Updating all product in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_all_updated = await product_service.update_all_product(product_id, product_data)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product all updated in controller')
+        product_data: ProductInput,
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel[ProductsModel]:
+    api_response.logger.info('Updating all product in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    product_all_updated = await product_service.update_all_product(product_id, product_data)
+    api_response.logger.info(f'Product all updated in controller')
     return product_all_updated
 
 
@@ -113,19 +117,19 @@ async def update_all_product(
     tags=["products"],
     description="Disable product",
 )
+@response_handler()
 async def disable_product(
         request: Request,
         response: Response,
-        product_id: str
-) -> ProductsModel:
-    print('Disabling product in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_disabled = await product_service.disable_product(product_id)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product disabled in controller')
-    return product_disabled
+        product_id: str,
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel:
+    api_response.logger.info('Disabling product in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    await product_service.disable_product(product_id)
+    api_response.logger.info(f'Product disabled in controller')
+    return
 
 
 @products_router.delete(
@@ -133,16 +137,16 @@ async def disable_product(
     tags=["products"],
     description="Delete product",
 )
+@response_handler()
 async def delete_product(
         request: Request,
         response: Response,
-        product_id: str
-) -> ProductsModel:
-    print('Deleting product in controller')
-    product_service = ProductsService(request.app.database)
-    try:
-        product_deleted = await product_service.delete_product(product_id)
-    except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
-    print(f'Product deleted in controller')
-    return product_deleted
+        product_id: str,
+        api_response: ApiResponse = Depends(ApiResponse)
+) -> ResponseModel:
+    api_response.logger.info('Deleting product in controller')
+    product_service = ProductsService(request.app.database, api_response)
+
+    await product_service.delete_product(product_id)
+    api_response.logger.info(f'Product deleted in controller')
+    return
