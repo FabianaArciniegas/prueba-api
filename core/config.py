@@ -6,6 +6,9 @@ class Settings(BaseSettings):
     DB_CONNECTION: str
     DB_NAME: str
     API_STR: str = "/api"
+    SECRET_KEY: str
+    SECRET_KEY_REFRESH: str
 
-# Crear una instancia de Settings que cargará las variables desde el archivo .env
+
+# Create a Settings instance that will load the variables from the .env file
 settings = Settings()

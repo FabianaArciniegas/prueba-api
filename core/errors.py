@@ -32,11 +32,6 @@ class InvalidParameterError(_BaseException):
     description = "Parameter error"
 
 
-class UnexpectedError(_BaseException):
-    status = Status.UNEXPECTED
-    description = "Unexpected error"
-
-
 class NotFoundError(_BaseException):
     status = Status.NOT_FOUND
     description = "Object not found"
@@ -44,9 +39,19 @@ class NotFoundError(_BaseException):
 
 class UnauthorizedError(_BaseException):
     status = Status.UNAUTHORIZED
-    description = "unauthorized error"
+    description = "Unauthorized error"
 
 
 class ForbiddenError(_BaseException):
     status = Status.FORBIDDEN
     description = "Unauthorized access"
+
+
+class UnexpectedError(_BaseException):
+    status = Status.UNEXPECTED
+    description = "Unexpected error"
+
+
+class InvalidCredentialsError(_BaseException):
+    status = Status.UNAUTHORIZED
+    description = "Invalid credentials"

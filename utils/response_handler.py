@@ -2,11 +2,12 @@ import functools
 
 from fastapi import Request, Response
 
-from core.errors import InvalidParameterError, NotFoundError, ForbiddenError, UnauthorizedError, UnexpectedError
+from core.errors import InvalidParameterError, NotFoundError, ForbiddenError, UnauthorizedError, UnexpectedError, \
+    InvalidCredentialsError
 from models.response_model import LocationError
 
 
-def response_handler():
+def response_handler(raw_response: bool = False):
     def decorator(func):
         @functools.wraps(func)
         async def wrapper(request: Request, response: Response, *args, **kwargs):
@@ -31,6 +32,10 @@ def response_handler():
                 api_response.status = error.status
                 api_response.add_error(error)
                 api_response.logger.error(error)
+            except InvalidCredentialsError as error:
+                api_response.status = error.status
+                api_response.add_error(error)
+                api_response.logger.error(error)
             except Exception as error:
                 unexpected_error = UnexpectedError(message=error.__str__(), location=LocationError.Server)
                 api_response.status = unexpected_error.status
@@ -38,7 +43,10 @@ def response_handler():
                 api_response.logger.error(unexpected_error)
 
             response.status_code = api_response.status.code
-            return api_response.set_result
+            if raw_response:
+                return api_response.data
+            else:
+                return api_response.set_result
 
         return wrapper
 

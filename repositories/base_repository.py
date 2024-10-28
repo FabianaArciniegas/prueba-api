@@ -1,7 +1,6 @@
 from datetime import datetime
 from enum import Enum
 from typing import TypeVar, Generic, Type
-
 from motor.motor_asyncio import AsyncIOMotorDatabase, AsyncIOMotorCollection
 from pydantic import BaseModel
 
@@ -65,30 +64,29 @@ class BaseRepository(Generic[DBModel]):
         self.api_response.logger.info(f'All instances found: {all_documents}')
         return all_documents
 
-    async def update(self, _id: str, update_data: dict) -> DBModel:
+    async def update(self, _id: str, _data: dict) -> DBModel:
         self.api_response.logger.info('Updating instance data')
-        update_data_filtered = {k: v for k, v in update_data.items() if v is not None}
-        update_data_filtered["update_at"] = datetime.utcnow()
+        _data["update_at"] = datetime.utcnow()
+        if _data.get("id"):
+            _data["_id"] = _data.pop("id")
+        await self.collection.find_one_and_update({"_id": _id}, {"$set": _data})
+        instance_updated = await self.collection.find_one({"_id": _id})
+        return self._entity_model.model_validate(instance_updated)
 
-        await self.collection.update_one({"_id": _id}, {"$set": update_data_filtered})
-        document_updated = await self.collection.find_one({"_id": _id})
-        self.api_response.logger.info(f'Instance updated data: {document_updated}')
-        return self._entity_model.model_validate(document_updated)
-
-    async def update_all(self, _id: str, product_data: dict) -> DBModel:
-        self.api_response.logger.info('Updating instance all data')
-        validated_document = self._entity_model.model_validate(product_data)
-
-        await self.collection.replace_one({"_id": _id}, validated_document.model_dump(exclude={"id"}))
-        document_all_updated = await self.collection.find_one({"_id": _id})
-        self.api_response.logger.info(f'Instance updated all data: {document_all_updated}')
-        return self._entity_model.model_validate(document_all_updated)
+    async def patch(self, _id: str, _data: BaseModel) -> DBModel:
+        self.api_response.logger.info('Updating instance data')
+        instance = await self.get_by_id(_id)
+        update_data = _data.model_dump(exclude_unset=True)
+        data_copy = instance.model_copy(update=update_data)
+        instance_updated = await self.update(_id, data_copy.model_dump())
+        return instance_updated
 
     async def disable(self, _id: str, update_data: dict) -> None:
         self.api_response.logger.info('Deactivating instance')
-        await self.collection.update_one({"_id": _id}, {
-            "$set": {"is_deleted": update_data['is_deleted'], "update_at": datetime.utcnow()}})
+        update_data["update_at"] = datetime.utcnow()
+        validated_document = self._entity_model.model_validate(update_data)
 
+        await self.collection.update_one({"_id": _id}, {"$set": validated_document.model_dump(exclude={"id"})})
         document_disabled = await self.collection.find_one({"_id": _id})
         self.api_response.logger.info(f'Instance disabled: {document_disabled}')
 

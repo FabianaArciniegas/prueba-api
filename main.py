@@ -1,11 +1,11 @@
 from contextlib import asynccontextmanager
-
 import uvicorn
 from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
 
 from api.routes import routes
 from core.config import settings
+from utils.app_exception_handlers import app_exception_handlers
 
 
 @asynccontextmanager
@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
     app.mongodb_client.close()
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan, exception_handlers=app_exception_handlers)
 
 for route in routes:
     app.include_router(route, prefix=settings.API_STR)
