@@ -23,3 +23,9 @@ class UsersRepository(BaseRepository[UsersModel]):
         if not user_found and raise_exception:
             raise InvalidCredentialsError(message="Incorrect username or password", location=LocationError.Body)
         return self._entity_model.model_validate(user_found)
+
+    async def get_user_by_email(self, email: str, raise_exception: bool = True) -> DBModel:
+        user_found = await self.collection.find_one({'email': email, "is_deleted": False})
+        if not user_found and raise_exception:
+            raise InvalidCredentialsError(message="Incorrect email", location=LocationError.Body)
+        return self._entity_model.model_validate(user_found)

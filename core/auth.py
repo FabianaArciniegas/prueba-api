@@ -4,7 +4,7 @@ from fastapi.security import OAuth2PasswordBearer
 
 from core.api_response import ApiResponse
 from core.errors import UnauthorizedError
-from core.jwt_handler import decode_access_token
+from core.jwt_handler import decode_token, TokenType
 from models.response_model import LocationError
 from models.users import TokenData
 
@@ -16,7 +16,7 @@ async def get_current_user(
         token: Annotated[str, Depends(oauth2_scheme)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> TokenData:
-    payload = decode_access_token(token)
+    payload = decode_token(token, TokenType.ACCESS_TOKEN)
     if not payload or 'id' not in payload:
         raise UnauthorizedError(message="Invalid credentials", location=LocationError.Headers)
     token_data = TokenData(**payload)

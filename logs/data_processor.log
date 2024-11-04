@@ -3893,3 +3893,982 @@ refresh_token
 10/28/2024 10:50:53 AM - INFO: d2b691a5-6b38-4a30-a0c2-ef099095adc5 - Instance deleted: {'_id': 'f0c58bee-2e16-499b-b2d0-c7172693ce0b', 'create_at': datetime.datetime(2024, 10, 16, 19, 23, 38, 857000), 'update_at': datetime.datetime(2024, 10, 28, 15, 50, 23, 384000), 'is_deleted': True, 'username': 'manuela200', 'full_name': 'manuela reyes', 'email': 'manuela20@email.com', 'password': '$2b$12$yuEMKm1fbkJj/TCfqo7Wz.2ZYRpP2qHRd5FIxOFIONDUpJ.QYV/7a', 'refresh_token': None}
 10/28/2024 10:50:53 AM - INFO: d2b691a5-6b38-4a30-a0c2-ef099095adc5 - User deleted in service
 10/28/2024 10:50:53 AM - INFO: d2b691a5-6b38-4a30-a0c2-ef099095adc5 - User deleted in controller
+10/28/2024 11:32:19 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - Login user in controller
+10/28/2024 11:32:19 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - Getting user in db
+10/28/2024 11:32:21 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - Updating instance data
+10/28/2024 11:32:21 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - Getting in instance
+10/28/2024 11:32:21 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - Instance found: {'_id': '9722e34a-914f-459e-ae54-b25d9b5ef0eb', 'create_at': datetime.datetime(2024, 10, 25, 20, 51, 48, 479000), 'update_at': datetime.datetime(2024, 10, 28, 15, 49, 6, 539000), 'is_deleted': False, 'username': 'anddiuu', 'full_name': 'andianota parra', 'email': 'andi80parra@email.com', 'password': '$2b$12$JNb1gMtlpTvt8oTc7EVnBuKOpBFXb2WZG11QTAdNAaHjcmhDsJhDG', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MjJlMzRhLTkxNGYtNDU5ZS1hZTU0LWIyNWQ5YjVlZjBlYiIsImVtYWlsIjoiYW5kaXBhcnJhQGVtYWlsLmNvbSIsInVzZXJuYW1lIjoiYW5kZGl1dSIsImZ1bGxfbmFtZSI6ImFuZGlhbm90YSBwYXJyYSIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzM1MjEyfQ.QYqNgprjk1KZY-HqNKT55lhOF5DFRiMaV6QWeCMs15o'}
+10/28/2024 11:32:21 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - Updating instance data
+10/28/2024 11:32:21 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - User logged in service
+10/28/2024 11:32:21 AM - INFO: 8f737e92-491f-45da-a1b7-a25663cbbead - User logged in controller
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - Getting user in controller
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - Verify that the authenticated user can only access their own information
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - Getting user in db
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - Getting in instance
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - Instance found: {'_id': '9722e34a-914f-459e-ae54-b25d9b5ef0eb', 'create_at': datetime.datetime(2024, 10, 25, 20, 51, 48, 479000), 'update_at': datetime.datetime(2024, 10, 28, 16, 32, 21, 116000), 'is_deleted': False, 'username': 'anddiuu', 'full_name': 'andianota parra', 'email': 'andi80parra@email.com', 'password': '$2b$12$JNb1gMtlpTvt8oTc7EVnBuKOpBFXb2WZG11QTAdNAaHjcmhDsJhDG', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MjJlMzRhLTkxNGYtNDU5ZS1hZTU0LWIyNWQ5YjVlZjBlYiIsImVtYWlsIjoiYW5kaTgwcGFycmFAZW1haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkaXV1IiwiZnVsbF9uYW1lIjoiYW5kaWFub3RhIHBhcnJhIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA3Mzc5NDF9.QjtXRRLnJ5ZVfYy7NQXPwNXgRpqrUZnNCf9qWhZdg0g'}
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - User found in service
+10/28/2024 11:33:10 AM - INFO: 745dec65-0bbe-4d43-9389-7a77dea047f6 - User found in controller
+10/28/2024 11:44:25 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - Getting user in controller
+10/28/2024 11:44:25 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - Verify that the authenticated user can only access their own information
+10/28/2024 11:44:25 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - Getting user in db
+10/28/2024 11:44:25 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - Getting in instance
+10/28/2024 11:44:26 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - Instance found: {'_id': '9722e34a-914f-459e-ae54-b25d9b5ef0eb', 'create_at': datetime.datetime(2024, 10, 25, 20, 51, 48, 479000), 'update_at': datetime.datetime(2024, 10, 28, 16, 32, 21, 116000), 'is_deleted': False, 'username': 'anddiuu', 'full_name': 'andianota parra', 'email': 'andi80parra@email.com', 'password': '$2b$12$JNb1gMtlpTvt8oTc7EVnBuKOpBFXb2WZG11QTAdNAaHjcmhDsJhDG', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MjJlMzRhLTkxNGYtNDU5ZS1hZTU0LWIyNWQ5YjVlZjBlYiIsImVtYWlsIjoiYW5kaTgwcGFycmFAZW1haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkaXV1IiwiZnVsbF9uYW1lIjoiYW5kaWFub3RhIHBhcnJhIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA3Mzc5NDF9.QjtXRRLnJ5ZVfYy7NQXPwNXgRpqrUZnNCf9qWhZdg0g'}
+10/28/2024 11:44:26 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - User found in service
+10/28/2024 11:44:26 AM - INFO: cb378955-d3a3-4d10-a1ed-3152d4bd35d8 - User found in controller
+10/28/2024 11:44:32 AM - ERROR: 07da8a90-0bd7-413d-8e6e-5854ad0aa7d3 - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 11:44:40 AM - INFO: bd978d9d-1a4d-4640-88a6-603dcf117ac2 - Getting all users in controller
+10/28/2024 11:44:40 AM - INFO: bd978d9d-1a4d-4640-88a6-603dcf117ac2 - Getting all users in db
+10/28/2024 11:44:40 AM - INFO: bd978d9d-1a4d-4640-88a6-603dcf117ac2 - Getting all instances
+10/28/2024 11:44:40 AM - INFO: bd978d9d-1a4d-4640-88a6-603dcf117ac2 - All instances found: [UsersModel(id='4512f19f-d09b-46f4-9e57-e505004318ab', create_at=datetime.datetime(2024, 10, 10, 1, 16, 33, 591000), update_at=datetime.datetime(2024, 10, 10, 1, 16, 33, 591000), is_deleted=False, username='maria56', full_name='maria castaño', email='mariacastaño@email.com', password='secretmaria789', refresh_token=None), UsersModel(id='c687b81c-5975-4e71-870a-ed069e0756e4', create_at=datetime.datetime(2024, 10, 11, 20, 20, 4, 949000), update_at=datetime.datetime(2024, 10, 11, 20, 20, 4, 949000), is_deleted=False, username='manuela21', full_name='manuela reyes', email='manuelareyes@email.com', password='secretmanuela789', refresh_token=''), UsersModel(id='6a7d0903-1f50-44a1-8176-81e46b2c30ba', create_at=datetime.datetime(2024, 10, 11, 20, 57, 32, 603000), update_at=datetime.datetime(2024, 10, 11, 20, 57, 32, 603000), is_deleted=False, username='manuela215', full_name='manuela reyes', email='manuelareyes@email.com', password='secretmanuela789', refresh_token=''), UsersModel(id='5f613245-2930-4068-9edb-4294e3ed56b3', create_at=datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), update_at=datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), is_deleted=False, username='anddyagudelo', full_name='anddy agudelo', email='anddy@mail.com', password='secret1234', refresh_token=''), UsersModel(id='f19e53e4-5713-4373-a330-7ca86c992b4e', create_at=datetime.datetime(2024, 10, 14, 1, 15, 14, 771000), update_at=datetime.datetime(2024, 10, 14, 1, 15, 14, 771000), is_deleted=False, username='manue8', full_name='manuela reyes', email='manuelareyes@email.com', password='secretmanuela789', refresh_token=''), UsersModel(id='086c70b4-4cc2-4f02-8848-12c1ff3f8a01', create_at=datetime.datetime(2024, 10, 14, 1, 32, 52, 115000), update_at=datetime.datetime(2024, 10, 14, 1, 32, 52, 115000), is_deleted=False, username='anddyagudelo1', full_name='anddy agudelo', email='anddy@mail.com', password='secret1234', refresh_token=''), UsersModel(id='987bfcb2-da98-4a63-8ffb-2737e81adcfd', create_at=datetime.datetime(2024, 10, 14, 1, 59, 27, 103000), update_at=datetime.datetime(2024, 10, 14, 1, 59, 27, 103000), is_deleted=False, username='anddyagudelo2', full_name='anddy agudelo', email='anddy@mail.com', password='secret1234', refresh_token=''), UsersModel(id='55fe91c5-1a19-455d-9f94-56b42cdf9aa0', create_at=datetime.datetime(2024, 10, 14, 2, 26, 42, 544000), update_at=datetime.datetime(2024, 10, 16, 17, 27, 42, 133000), is_deleted=False, username='luisita8880', full_name='luisa calderon', email='luisacalderonroma80@email.com', password='secret1234', refresh_token=''), UsersModel(id='60098820-4a8c-4ec0-8a37-efb427b56e3f', create_at=datetime.datetime(2024, 10, 16, 19, 21, 6, 58000), update_at=datetime.datetime(2024, 10, 16, 19, 21, 6, 58000), is_deleted=False, username='manuela2', full_name='manuela reyes', email='manuelareyes888@email.com', password='$2b$12$od6/K/5IxwSr9q7sF4KtTus7RtGTHzaNCEsta1.dtaGGKx106u4M.', refresh_token=''), UsersModel(id='3bc92f2a-2322-4d18-8a0c-9811b68a532f', create_at=datetime.datetime(2024, 10, 17, 1, 22, 6, 269000), update_at=datetime.datetime(2024, 10, 17, 1, 22, 6, 269000), is_deleted=False, username='manuela400', full_name='manuela reyes', email='manuelareyes888@email.com', password='$2b$12$gn3zbPCXbg0CAYnt/YEoE.m.6PfVyZS/6o79uVZD7km6.Jt2Iv.0m', refresh_token=''), UsersModel(id='e7d9effb-6b2e-4b63-9899-62b4f0e3d231', create_at=datetime.datetime(2024, 10, 17, 16, 8, 12, 948000), update_at=datetime.datetime(2024, 10, 22, 16, 48, 4, 851000), is_deleted=False, username='anddyagudelo10', full_name='andi parra', email='andiparra@email.com', password='$2b$12$9M3iNN/ZMN8dTQTtOOhQjutAKsq6j9STouTCNitdrPNIjuEb8GWCK', refresh_token=''), UsersModel(id='7349f3ac-4452-4774-91d1-6bbc6c25dd63', create_at=datetime.datetime(2024, 10, 22, 16, 18, 5, 867000), update_at=datetime.datetime(2024, 10, 23, 19, 13, 12, 315000), is_deleted=False, username='manuela405', full_name='manuela reyes', email='manuelareyes888@email.com', password='$2b$12$AZQes8rT2RmBdo5T7JswuuZvfVBChLC.dCgkE7xRv0MPPy1HothGi', refresh_token=''), UsersModel(id='30508c89-f03c-42c2-9a87-766fd010bbe4', create_at=datetime.datetime(2024, 10, 23, 19, 50, 45, 820000), update_at=datetime.datetime(2024, 10, 24, 22, 24, 26, 735000), is_deleted=False, username='manuela409', full_name='manuela reyes', email='manuelareyes888@email.com', password='$2b$12$iB79QZ7mquqw9qFjPYojL.hhnVll4FtpPwGTXcGPhQOiTQsHnfQCW', refresh_token=''), UsersModel(id='9722e34a-914f-459e-ae54-b25d9b5ef0eb', create_at=datetime.datetime(2024, 10, 25, 20, 51, 48, 479000), update_at=datetime.datetime(2024, 10, 28, 16, 32, 21, 116000), is_deleted=False, username='anddiuu', full_name='andianota parra', email='andi80parra@email.com', password='$2b$12$JNb1gMtlpTvt8oTc7EVnBuKOpBFXb2WZG11QTAdNAaHjcmhDsJhDG', refresh_token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MjJlMzRhLTkxNGYtNDU5ZS1hZTU0LWIyNWQ5YjVlZjBlYiIsImVtYWlsIjoiYW5kaTgwcGFycmFAZW1haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkaXV1IiwiZnVsbF9uYW1lIjoiYW5kaWFub3RhIHBhcnJhIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA3Mzc5NDF9.QjtXRRLnJ5ZVfYy7NQXPwNXgRpqrUZnNCf9qWhZdg0g'), UsersModel(id='1d02f15c-7c94-4435-a36f-4aebfb05711f', create_at=datetime.datetime(2024, 10, 28, 15, 19, 56, 232000), update_at=datetime.datetime(2024, 10, 28, 15, 19, 56, 232000), is_deleted=False, username='manuela4101', full_name='manuela reyes', email='manuelareyes888@email.com', password='$2b$12$SY6N0aBf/vH86Im9sYYpX.4gQbkPqAkAqXYWmttl/n7uyGzfE4i56', refresh_token=None)]
+10/28/2024 11:44:40 AM - INFO: bd978d9d-1a4d-4640-88a6-603dcf117ac2 - All users found in service
+10/28/2024 11:44:40 AM - INFO: bd978d9d-1a4d-4640-88a6-603dcf117ac2 - All users found in controller
+10/28/2024 11:44:47 AM - INFO: 585375b8-27a9-4797-b730-971bf0c28398 - Creating user in controller
+10/28/2024 11:44:47 AM - INFO: 585375b8-27a9-4797-b730-971bf0c28398 - Check user in db
+10/28/2024 11:44:47 AM - ERROR: 585375b8-27a9-4797-b730-971bf0c28398 - Error: Parameter error - There is already a user with that username - LocationError.Body
+10/28/2024 11:44:52 AM - INFO: c34efde4-7560-471d-b32c-127add8b66cf - Creating user in controller
+10/28/2024 11:44:52 AM - INFO: c34efde4-7560-471d-b32c-127add8b66cf - Check user in db
+10/28/2024 11:44:52 AM - INFO: c34efde4-7560-471d-b32c-127add8b66cf - Creating in instance
+10/28/2024 11:44:52 AM - INFO: c34efde4-7560-471d-b32c-127add8b66cf - Instance created: id='27c6c984-4f38-4dfb-9732-2afa775bf016' create_at=datetime.datetime(2024, 10, 28, 16, 44, 52, 767923) update_at=datetime.datetime(2024, 10, 28, 16, 44, 52, 767923) is_deleted=False username='manuela41051' full_name='manuela reyes' email='manuelareyes888@email.com' password='$2b$12$v1KA.VCBAEHZ2gL3/QVDReGTo7peP/v5vPidP0ydn/.aPpiVctUtu' refresh_token=None
+10/28/2024 11:44:52 AM - INFO: c34efde4-7560-471d-b32c-127add8b66cf - User created in service
+10/28/2024 11:44:52 AM - INFO: c34efde4-7560-471d-b32c-127add8b66cf - User created in controller
+10/28/2024 11:45:02 AM - ERROR: 7e25909c-ee49-41f0-a599-e2ea736b281c - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 11:45:10 AM - ERROR: 944dde4e-9fef-4ed3-b269-092b25212ca2 - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 11:45:23 AM - ERROR: 531808bb-6352-4ddb-9452-5f4d5f4aac05 - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 02:56:12 PM - INFO: 68c6db69-6c67-44d8-b242-3de87c8b05bf - Creating user in controller
+10/28/2024 02:56:12 PM - INFO: 68c6db69-6c67-44d8-b242-3de87c8b05bf - Check user in db
+10/28/2024 02:56:14 PM - INFO: 68c6db69-6c67-44d8-b242-3de87c8b05bf - Creating in instance
+10/28/2024 02:56:14 PM - INFO: 68c6db69-6c67-44d8-b242-3de87c8b05bf - Instance created: id='ed295bb1-4267-4035-a17d-abfe21258c96' create_at=datetime.datetime(2024, 10, 28, 19, 56, 14, 181940) update_at=datetime.datetime(2024, 10, 28, 19, 56, 14, 181940) is_deleted=False username='juana123' full_name='juana castro' email='juanacastro@email.com' password='$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK' refresh_token=None
+10/28/2024 02:56:14 PM - INFO: 68c6db69-6c67-44d8-b242-3de87c8b05bf - User created in service
+10/28/2024 02:56:14 PM - INFO: 68c6db69-6c67-44d8-b242-3de87c8b05bf - User created in controller
+10/28/2024 02:56:56 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - Login user in controller
+10/28/2024 02:56:56 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - Getting user in db
+10/28/2024 02:56:56 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - Updating instance data
+10/28/2024 02:56:56 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - Getting in instance
+10/28/2024 02:56:57 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': None}
+10/28/2024 02:56:57 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - Updating instance data
+10/28/2024 02:56:57 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - User logged in service
+10/28/2024 02:56:57 PM - INFO: 9c415e20-9237-4697-8245-3cea89749da8 - User logged in controller
+10/28/2024 03:03:04 PM - ERROR: e726d08d-3ca5-4f27-a959-1f92d2dad053 - Error: Parameter error - Password must match - LocationError.Body
+10/28/2024 03:09:57 PM - INFO: 03fa281a-5185-4d19-bcde-8289140d5e17 - Updating password in controller
+10/28/2024 03:09:57 PM - INFO: 03fa281a-5185-4d19-bcde-8289140d5e17 - Password updated in controller
+10/28/2024 03:11:29 PM - INFO: 622a49b5-6f04-4854-8871-f46c97169e3e - Updating password in controller
+10/28/2024 03:11:43 PM - INFO: 622a49b5-6f04-4854-8871-f46c97169e3e - Password updated in controller
+10/28/2024 03:41:51 PM - ERROR: 7dfd47aa-38c3-4252-9766-f52686a2a247 - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 03:42:34 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Refresh token in controller
+10/28/2024 03:42:34 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Verifying refresh token
+10/28/2024 03:42:34 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Getting in instance
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 19, 56, 57, 1000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUwMjE2fQ.ddhyh4D8s5JHklxxDvKLt-bd3AB0PvQq9JIkbpSLQOQ'}
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Updating instance data
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Getting in instance
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 19, 56, 57, 1000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUwMjE2fQ.ddhyh4D8s5JHklxxDvKLt-bd3AB0PvQq9JIkbpSLQOQ'}
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Updating instance data
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Token refreshed in service
+10/28/2024 03:42:35 PM - INFO: 2ed98eb6-36bc-48fa-8bc6-29acd1cf0335 - Token refreshed in controller
+10/28/2024 03:42:51 PM - INFO: 5674e81c-a59e-4321-81a3-c0c43b50c48b - Updating password in controller
+10/28/2024 03:42:51 PM - INFO: 5674e81c-a59e-4321-81a3-c0c43b50c48b - Password updated in controller
+10/28/2024 03:44:35 PM - ERROR: e859bf36-0f00-4cc8-bbc1-8c0538fb000c - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 03:44:49 PM - ERROR: f82c056e-ab0b-4540-a3dd-f5dc7d009bb7 - Error: Unauthorized error - Invalid token or signature verification failed - LocationError.Headers
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Logging out user in controller
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Getting user in db
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Getting in instance
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 20, 42, 35, 555000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUyOTU1fQ.skMmFrUimgAf2G_TRfNc0CWqCeyzIa5tFUvgpPna5Uc'}
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Updating instance data
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Getting in instance
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 20, 42, 35, 555000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUyOTU1fQ.skMmFrUimgAf2G_TRfNc0CWqCeyzIa5tFUvgpPna5Uc'}
+10/28/2024 03:44:54 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - Updating instance data
+10/28/2024 03:44:55 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - User logged out in service
+10/28/2024 03:44:55 PM - INFO: 3facff41-7501-4e98-ace2-23934784a1cf - User logged out in controller
+10/28/2024 03:45:15 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - Login user in controller
+10/28/2024 03:45:15 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - Getting user in db
+10/28/2024 03:45:15 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - Updating instance data
+10/28/2024 03:45:15 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - Getting in instance
+10/28/2024 03:45:15 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 20, 44, 54, 836000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': None}
+10/28/2024 03:45:15 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - Updating instance data
+10/28/2024 03:45:16 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - User logged in service
+10/28/2024 03:45:16 PM - INFO: 800030fc-3f10-41fc-b7e7-95c39ba035de - User logged in controller
+10/28/2024 03:52:10 PM - INFO: 5a96bf0b-f601-4ed0-92e4-6068a91d10c6 - Updating password in controller
+10/28/2024 03:52:56 PM - INFO: 5a96bf0b-f601-4ed0-92e4-6068a91d10c6 - Password updated in controller
+10/28/2024 03:54:20 PM - INFO: a5891e7e-8156-4b02-a0b5-2f6850ac8f44 - Updating password in controller
+10/28/2024 03:54:20 PM - INFO: a5891e7e-8156-4b02-a0b5-2f6850ac8f44 - Password updated in controller
+10/28/2024 03:54:34 PM - INFO: e5483d6f-13ce-449e-ab34-a6f6ffc0392e - Updating password in controller
+10/28/2024 03:55:40 PM - INFO: ac5b3ad2-92a6-46e1-846b-a40eabee8e98 - Updating password in controller
+10/28/2024 03:55:43 PM - INFO: ac5b3ad2-92a6-46e1-846b-a40eabee8e98 - Password updated in controller
+10/28/2024 03:55:58 PM - INFO: 4d690ce1-4508-4a68-9e07-e593e223a625 - Updating password in controller
+10/28/2024 03:57:16 PM - INFO: b50eb19f-ab71-47b6-93e8-a744727d4ee4 - Updating password in controller
+10/28/2024 03:57:16 PM - INFO: b50eb19f-ab71-47b6-93e8-a744727d4ee4 - Password updated in controller
+10/28/2024 03:57:18 PM - INFO: bcf02f39-c53d-4eda-a3bb-9a25e418775f - Updating password in controller
+10/28/2024 03:57:18 PM - INFO: bcf02f39-c53d-4eda-a3bb-9a25e418775f - Password updated in controller
+10/28/2024 04:00:47 PM - INFO: 95cf5202-c452-42ca-acff-2229a94a18f6 - Updating password in controller
+10/28/2024 04:00:47 PM - INFO: 95cf5202-c452-42ca-acff-2229a94a18f6 - Password updated in controller
+10/28/2024 04:02:04 PM - INFO: ec30d2e4-c952-41b1-b6a5-de355a381fb2 - Updating password in controller
+10/28/2024 04:02:04 PM - INFO: ec30d2e4-c952-41b1-b6a5-de355a381fb2 - Password updated in controller
+10/28/2024 04:02:08 PM - INFO: 112c60e6-8abf-44d0-9bd8-9410f44835e8 - Updating password in controller
+10/28/2024 04:02:08 PM - INFO: 112c60e6-8abf-44d0-9bd8-9410f44835e8 - Password updated in controller
+10/28/2024 04:04:46 PM - INFO: deffd2e7-13fe-482a-a5d3-f9afc847d8d1 - Updating password in controller
+10/28/2024 04:04:46 PM - INFO: deffd2e7-13fe-482a-a5d3-f9afc847d8d1 - Verify that the authenticated user can only access their own information
+10/28/2024 04:04:46 PM - ERROR: deffd2e7-13fe-482a-a5d3-f9afc847d8d1 - Error: Unexpected error - 'TokenData' object has no attribute 'password' - LocationError.Server
+10/28/2024 04:04:55 PM - INFO: 37cb7ab3-8bbb-4b2f-af10-751b163f4786 - Updating password in controller
+10/28/2024 04:04:55 PM - INFO: 37cb7ab3-8bbb-4b2f-af10-751b163f4786 - Verify that the authenticated user can only access their own information
+10/28/2024 04:04:55 PM - ERROR: 37cb7ab3-8bbb-4b2f-af10-751b163f4786 - Error: Unexpected error - 'TokenData' object has no attribute 'password' - LocationError.Server
+10/28/2024 04:06:38 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Updating password in controller
+10/28/2024 04:06:38 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Verify that the authenticated user can only access their own information
+10/28/2024 04:06:38 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Getting user in db
+10/28/2024 04:06:38 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Getting in instance
+10/28/2024 04:06:39 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 20, 45, 15, 973000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:06:40 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Updating instance data
+10/28/2024 04:06:40 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Getting in instance
+10/28/2024 04:06:40 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 20, 45, 15, 973000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$uQB6AXX2QzbTQWBBMXx1Aukoti6SfDLVEBGS6uJunXWwnWyxrF3mK', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:06:40 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Updating instance data
+10/28/2024 04:06:40 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Password updated in service
+10/28/2024 04:06:40 PM - INFO: 0972e81e-0487-47a1-a362-5e9808439714 - Password updated in controller
+10/28/2024 04:10:29 PM - INFO: 379f8940-09cc-4857-a4a3-3babc549f4bd - Updating password in controller
+10/28/2024 04:10:29 PM - INFO: 379f8940-09cc-4857-a4a3-3babc549f4bd - Verify that the authenticated user can only access their own information
+10/28/2024 04:10:29 PM - INFO: 379f8940-09cc-4857-a4a3-3babc549f4bd - Getting user in db
+10/28/2024 04:10:29 PM - INFO: 379f8940-09cc-4857-a4a3-3babc549f4bd - Getting in instance
+10/28/2024 04:10:30 PM - INFO: 379f8940-09cc-4857-a4a3-3babc549f4bd - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 6, 40, 123000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': b'$2b$12$Cl1x2nSMtIGAyHAwMWvC4O9GWW9RRFKVcPuzJwX06OUX6uhuwD2IC', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:10:30 PM - ERROR: 379f8940-09cc-4857-a4a3-3babc549f4bd - Error: Unauthorized error - Incorrect username or password - LocationError.Body
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Updating password in controller
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Verify that the authenticated user can only access their own information
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Getting user in db
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Getting in instance
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 6, 40, 123000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': b'$2b$12$Cl1x2nSMtIGAyHAwMWvC4O9GWW9RRFKVcPuzJwX06OUX6uhuwD2IC', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Updating instance data
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Getting in instance
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 6, 40, 123000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': b'$2b$12$Cl1x2nSMtIGAyHAwMWvC4O9GWW9RRFKVcPuzJwX06OUX6uhuwD2IC', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:11:18 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Updating instance data
+10/28/2024 04:11:19 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Password updated in service
+10/28/2024 04:11:19 PM - INFO: eaf37ffc-f29a-43ed-9c79-956cc1ba34b4 - Password updated in controller
+10/28/2024 04:12:01 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Updating password in controller
+10/28/2024 04:12:01 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Verify that the authenticated user can only access their own information
+10/28/2024 04:12:01 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Getting user in db
+10/28/2024 04:12:01 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Getting in instance
+10/28/2024 04:12:01 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 11, 18, 837000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$KzV9L4b5Zwo9Sw2Ub5cx7en7lXQgww4UGUivuVmqEJp8kNqt2p8VC', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:12:02 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Updating instance data
+10/28/2024 04:12:02 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Getting in instance
+10/28/2024 04:12:02 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 11, 18, 837000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$KzV9L4b5Zwo9Sw2Ub5cx7en7lXQgww4UGUivuVmqEJp8kNqt2p8VC', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:12:02 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Updating instance data
+10/28/2024 04:12:02 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Password updated in service
+10/28/2024 04:12:02 PM - INFO: 3513dbef-57ad-4fe6-af08-6a3d694a0ace - Password updated in controller
+10/28/2024 04:22:28 PM - ERROR: 7d31e2f8-024e-4d8c-a3f4-c5361e9e1510 - Error: Unauthorized error - Token has expired - LocationError.Headers
+10/28/2024 04:22:49 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Refresh token in controller
+10/28/2024 04:22:49 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Verifying refresh token
+10/28/2024 04:22:49 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Getting in instance
+10/28/2024 04:22:50 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 12, 2, 199000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$bjSKF.h8gXbQ8AWI4OefMew2kjJAmUS6Knk1A51Epoxt8otvoGKbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:22:50 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Updating instance data
+10/28/2024 04:22:50 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Getting in instance
+10/28/2024 04:22:51 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 12, 2, 199000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$bjSKF.h8gXbQ8AWI4OefMew2kjJAmUS6Knk1A51Epoxt8otvoGKbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzUzMTE1fQ.im1QFKxCRwLEXY7w983JWXGSGxHhYPJivcA9izOtKCA'}
+10/28/2024 04:22:51 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Updating instance data
+10/28/2024 04:22:51 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Token refreshed in service
+10/28/2024 04:22:51 PM - INFO: 165dce65-9517-435b-9581-47aeb2eed583 - Token refreshed in controller
+10/28/2024 04:23:20 PM - INFO: c629b3c4-99b4-439a-8c80-0dbd57307d8e - Updating password in controller
+10/28/2024 04:23:25 PM - INFO: c629b3c4-99b4-439a-8c80-0dbd57307d8e - Verify that the authenticated user can only access their own information
+10/28/2024 04:23:25 PM - INFO: c629b3c4-99b4-439a-8c80-0dbd57307d8e - Getting user in db
+10/28/2024 04:23:25 PM - INFO: c629b3c4-99b4-439a-8c80-0dbd57307d8e - Getting in instance
+10/28/2024 04:23:25 PM - INFO: c629b3c4-99b4-439a-8c80-0dbd57307d8e - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 22, 51, 9000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$bjSKF.h8gXbQ8AWI4OefMew2kjJAmUS6Knk1A51Epoxt8otvoGKbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzU1MzcwfQ.P05HvRbEO86H3TNOQb0K7VI1bqIlGKHCeAU7mSJiKMY'}
+10/28/2024 04:23:25 PM - ERROR: c629b3c4-99b4-439a-8c80-0dbd57307d8e - Error: Unauthorized error - Incorrect username or password - LocationError.Body
+10/28/2024 04:23:52 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Updating password in controller
+10/28/2024 04:24:02 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Verify that the authenticated user can only access their own information
+10/28/2024 04:24:10 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Getting user in db
+10/28/2024 04:24:14 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Getting in instance
+10/28/2024 04:24:14 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 22, 51, 9000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$bjSKF.h8gXbQ8AWI4OefMew2kjJAmUS6Knk1A51Epoxt8otvoGKbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzU1MzcwfQ.P05HvRbEO86H3TNOQb0K7VI1bqIlGKHCeAU7mSJiKMY'}
+10/28/2024 04:24:57 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Updating instance data
+10/28/2024 04:24:57 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Getting in instance
+10/28/2024 04:24:57 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 22, 51, 9000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$bjSKF.h8gXbQ8AWI4OefMew2kjJAmUS6Knk1A51Epoxt8otvoGKbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzU1MzcwfQ.P05HvRbEO86H3TNOQb0K7VI1bqIlGKHCeAU7mSJiKMY'}
+10/28/2024 04:24:57 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Updating instance data
+10/28/2024 04:27:02 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Password updated in service
+10/28/2024 04:27:46 PM - INFO: 15ff2003-d090-4023-9e24-9d85a0d665c8 - Password updated in controller
+10/28/2024 04:29:52 PM - INFO: d4f54ec3-6500-4aba-94bb-e42afacd9cb3 - Creating user in controller
+10/28/2024 04:29:52 PM - INFO: d4f54ec3-6500-4aba-94bb-e42afacd9cb3 - Check user in db
+10/28/2024 04:29:52 PM - INFO: d4f54ec3-6500-4aba-94bb-e42afacd9cb3 - Creating in instance
+10/28/2024 04:29:52 PM - INFO: d4f54ec3-6500-4aba-94bb-e42afacd9cb3 - Instance created: id='10576c0d-545a-4d47-a5cf-50865d6f4be6' create_at=datetime.datetime(2024, 10, 28, 21, 29, 52, 505866) update_at=datetime.datetime(2024, 10, 28, 21, 29, 52, 505866) is_deleted=False username='juana1230' full_name='juana castro' email='juanacastro@email.com' password='$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm' refresh_token=None
+10/28/2024 04:29:52 PM - INFO: d4f54ec3-6500-4aba-94bb-e42afacd9cb3 - User created in service
+10/28/2024 04:29:52 PM - INFO: d4f54ec3-6500-4aba-94bb-e42afacd9cb3 - User created in controller
+10/28/2024 04:38:32 PM - INFO: 71f669e6-1576-442f-ae9e-d97b0e749371 - Creating user in controller
+10/28/2024 04:38:32 PM - INFO: 71f669e6-1576-442f-ae9e-d97b0e749371 - Check user in db
+10/28/2024 04:38:33 PM - INFO: 71f669e6-1576-442f-ae9e-d97b0e749371 - Creating in instance
+10/28/2024 04:38:33 PM - INFO: 71f669e6-1576-442f-ae9e-d97b0e749371 - Instance created: id='7e74bf2a-95f4-4b9e-9914-b7506989efb6' create_at=datetime.datetime(2024, 10, 28, 21, 38, 33, 868164) update_at=datetime.datetime(2024, 10, 28, 21, 38, 33, 868164) is_deleted=False username='juana12300' full_name='juana castro' email='juanacastro@email.com' password='$2b$12$F9UdepVFl3rSFN0CXh0UnOKR5WsJqt0X1eSVBemscZbLn7LB9afjW' refresh_token=None
+10/28/2024 04:38:33 PM - INFO: 71f669e6-1576-442f-ae9e-d97b0e749371 - User created in service
+10/28/2024 04:38:33 PM - INFO: 71f669e6-1576-442f-ae9e-d97b0e749371 - User created in controller
+10/28/2024 04:39:02 PM - INFO: 48cb8203-4365-490b-9cc0-3f3a67e6681d - Updating password in controller
+10/28/2024 04:39:02 PM - INFO: 48cb8203-4365-490b-9cc0-3f3a67e6681d - Verify that the authenticated user can only access their own information
+10/28/2024 04:39:02 PM - INFO: 48cb8203-4365-490b-9cc0-3f3a67e6681d - Getting user in db
+10/28/2024 04:39:02 PM - INFO: 48cb8203-4365-490b-9cc0-3f3a67e6681d - Getting in instance
+10/28/2024 04:39:02 PM - INFO: 48cb8203-4365-490b-9cc0-3f3a67e6681d - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 24, 57, 461000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$oOuQoWUt1GBTpZ6/dJJjaeGtkS.Fk4EurD0.PyLfq5JY55PXibdj2', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzU1MzcwfQ.P05HvRbEO86H3TNOQb0K7VI1bqIlGKHCeAU7mSJiKMY'}
+10/28/2024 04:39:02 PM - ERROR: 48cb8203-4365-490b-9cc0-3f3a67e6681d - Error: Unauthorized error - Incorrect username or password - LocationError.Body
+10/28/2024 04:39:13 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Updating password in controller
+10/28/2024 04:39:13 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Verify that the authenticated user can only access their own information
+10/28/2024 04:39:13 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Getting user in db
+10/28/2024 04:39:13 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Getting in instance
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 24, 57, 461000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$oOuQoWUt1GBTpZ6/dJJjaeGtkS.Fk4EurD0.PyLfq5JY55PXibdj2', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzU1MzcwfQ.P05HvRbEO86H3TNOQb0K7VI1bqIlGKHCeAU7mSJiKMY'}
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Updating instance data
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Getting in instance
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Instance found: {'_id': 'ed295bb1-4267-4035-a17d-abfe21258c96', 'create_at': datetime.datetime(2024, 10, 28, 19, 56, 14, 181000), 'update_at': datetime.datetime(2024, 10, 28, 21, 24, 57, 461000), 'is_deleted': False, 'username': 'juana123', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$oOuQoWUt1GBTpZ6/dJJjaeGtkS.Fk4EurD0.PyLfq5JY55PXibdj2', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVkMjk1YmIxLTQyNjctNDAzNS1hMTdkLWFiZmUyMTI1OGM5NiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMyIsImZ1bGxfbmFtZSI6Imp1YW5hIGNhc3RybyIsInR5cGUiOiJyZWZyZXNoIiwiZXhwIjoxNzMwNzU1MzcwfQ.P05HvRbEO86H3TNOQb0K7VI1bqIlGKHCeAU7mSJiKMY'}
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Updating instance data
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Password updated in service
+10/28/2024 04:39:14 PM - INFO: faac6ea6-6892-4a06-9277-40ead68c7c26 - Password updated in controller
+10/29/2024 04:04:50 PM - INFO: 02ce2377-9c73-4294-91b4-43bbb5d0f656 - Recovery password in controller
+10/29/2024 04:04:50 PM - INFO: 02ce2377-9c73-4294-91b4-43bbb5d0f656 - Getting user in db
+10/29/2024 04:04:51 PM - ERROR: 02ce2377-9c73-4294-91b4-43bbb5d0f656 - Error: Invalid credentials - Incorrect email - LocationError.Body
+10/29/2024 04:05:25 PM - INFO: 661ce5b0-6ec0-4639-871c-66a87bd71453 - Recovery password in controller
+10/29/2024 04:05:25 PM - INFO: 661ce5b0-6ec0-4639-871c-66a87bd71453 - Getting user in db
+10/29/2024 04:05:25 PM - INFO: 661ce5b0-6ec0-4639-871c-66a87bd71453 - Password reset created token
+10/29/2024 04:05:28 PM - INFO: 661ce5b0-6ec0-4639-871c-66a87bd71453 - Password reset email sent successfully
+10/29/2024 04:05:28 PM - INFO: 661ce5b0-6ec0-4639-871c-66a87bd71453 - Password reset email sent successfully in controller
+10/29/2024 04:09:46 PM - INFO: d8645642-6837-4c4c-b6f7-0318fc9b8ff8 - Recovery password in controller
+10/29/2024 04:09:46 PM - INFO: d8645642-6837-4c4c-b6f7-0318fc9b8ff8 - Getting user in db
+10/29/2024 04:09:47 PM - INFO: d8645642-6837-4c4c-b6f7-0318fc9b8ff8 - Password reset created token
+10/29/2024 04:09:51 PM - INFO: d8645642-6837-4c4c-b6f7-0318fc9b8ff8 - Password reset email sent successfully
+10/29/2024 04:09:51 PM - INFO: d8645642-6837-4c4c-b6f7-0318fc9b8ff8 - Password reset email sent successfully in controller
+10/29/2024 04:15:19 PM - INFO: dbe29313-b473-4f88-9a3e-f57e0a6c1b48 - Recovery password in controller
+10/29/2024 04:15:19 PM - INFO: dbe29313-b473-4f88-9a3e-f57e0a6c1b48 - Getting user in db
+10/29/2024 04:15:20 PM - INFO: dbe29313-b473-4f88-9a3e-f57e0a6c1b48 - Password reset created token
+10/29/2024 04:15:23 PM - INFO: dbe29313-b473-4f88-9a3e-f57e0a6c1b48 - Password reset email sent successfully
+10/29/2024 04:15:23 PM - INFO: dbe29313-b473-4f88-9a3e-f57e0a6c1b48 - Password reset email sent successfully in controller
+10/29/2024 04:51:44 PM - INFO: c346515c-52d7-4784-a527-a05effb64480 - Recovery password in controller
+10/29/2024 04:51:44 PM - INFO: c346515c-52d7-4784-a527-a05effb64480 - Getting user in db
+10/29/2024 04:51:45 PM - INFO: c346515c-52d7-4784-a527-a05effb64480 - Password reset created token
+10/29/2024 04:51:48 PM - INFO: c346515c-52d7-4784-a527-a05effb64480 - Password reset email sent successfully
+10/29/2024 04:51:48 PM - INFO: c346515c-52d7-4784-a527-a05effb64480 - Password reset email sent successfully in controller
+10/29/2024 04:52:50 PM - INFO: 7dff5474-0266-4086-8755-a89ba9211854 - Recovery password in controller
+10/29/2024 04:52:50 PM - INFO: 7dff5474-0266-4086-8755-a89ba9211854 - Getting user in db
+10/29/2024 04:52:51 PM - INFO: 7dff5474-0266-4086-8755-a89ba9211854 - Password reset created token
+10/29/2024 04:52:53 PM - INFO: 7dff5474-0266-4086-8755-a89ba9211854 - Password reset email sent successfully
+10/29/2024 04:52:53 PM - INFO: 7dff5474-0266-4086-8755-a89ba9211854 - Password reset email sent successfully in controller
+10/29/2024 04:55:56 PM - INFO: a298b721-3e7b-4314-9d4d-0fd21256f258 - Reset password in controller
+10/29/2024 04:55:56 PM - INFO: a298b721-3e7b-4314-9d4d-0fd21256f258 - Verify that the authenticated user can only access
+10/29/2024 04:55:56 PM - INFO: a298b721-3e7b-4314-9d4d-0fd21256f258 - Getting user in db
+10/29/2024 04:55:56 PM - INFO: a298b721-3e7b-4314-9d4d-0fd21256f258 - Getting in instance
+10/29/2024 04:55:57 PM - INFO: a298b721-3e7b-4314-9d4d-0fd21256f258 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': 'secret1234', 'refresh_token': ''}
+10/29/2024 04:55:57 PM - ERROR: a298b721-3e7b-4314-9d4d-0fd21256f258 - Error: Unexpected error - 'UsersModel' object is not subscriptable - LocationError.Server
+10/29/2024 04:57:58 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Reset password in controller
+10/29/2024 04:57:58 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Verify that the authenticated user can only access
+10/29/2024 04:57:58 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Getting user in db
+10/29/2024 04:57:58 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Getting in instance
+10/29/2024 04:57:59 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': 'secret1234', 'refresh_token': ''}
+10/29/2024 04:58:00 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Updating instance data
+10/29/2024 04:58:00 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Getting in instance
+10/29/2024 04:58:00 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': 'secret1234', 'refresh_token': ''}
+10/29/2024 04:58:00 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Updating instance data
+10/29/2024 04:58:00 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Password updated in service
+10/29/2024 04:58:00 PM - INFO: fb233f88-f7ec-4d34-b991-8ff94ae9e75a - Password updated in controller
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - Login user in controller
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - Getting user in db
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - Updating instance data
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - Getting in instance
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 29, 21, 58, 0, 118000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$ZkmjTSbd0D5VGtZJqF7y5.ZQid9ylhAZWDwvjFFaoVrdkEPQcmC4O', 'refresh_token': ''}
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - Updating instance data
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - User logged in service
+10/29/2024 04:58:51 PM - INFO: 70c6e00b-40d5-4f11-8808-284fca01ec5d - User logged in controller
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - Getting user in controller
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - Verify that the authenticated user can only access their own information
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - Getting user in db
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - Getting in instance
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 29, 21, 58, 51, 530000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$ZkmjTSbd0D5VGtZJqF7y5.ZQid9ylhAZWDwvjFFaoVrdkEPQcmC4O', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA4NDM5MzF9.SKnAheQBcKRJtQf9h9rQFDk64mTGGfkZx8lgKjQbFr8'}
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - User found in service
+10/29/2024 04:59:18 PM - INFO: 046c0848-f502-4f76-8c17-71179a93331f - User found in controller
+10/29/2024 04:59:30 PM - ERROR: d2afafad-b81c-467b-b9ea-9e302b42d8d1 - Error: Unauthorized error - Invalid token or signature verification failed - LocationError.Headers
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Logging out user in controller
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Getting user in db
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Getting in instance
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 29, 21, 58, 51, 530000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$ZkmjTSbd0D5VGtZJqF7y5.ZQid9ylhAZWDwvjFFaoVrdkEPQcmC4O', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA4NDM5MzF9.SKnAheQBcKRJtQf9h9rQFDk64mTGGfkZx8lgKjQbFr8'}
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Updating instance data
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Getting in instance
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 29, 21, 58, 51, 530000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$ZkmjTSbd0D5VGtZJqF7y5.ZQid9ylhAZWDwvjFFaoVrdkEPQcmC4O', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA4NDM5MzF9.SKnAheQBcKRJtQf9h9rQFDk64mTGGfkZx8lgKjQbFr8'}
+10/29/2024 04:59:52 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - Updating instance data
+10/29/2024 04:59:53 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - User logged out in service
+10/29/2024 04:59:53 PM - INFO: b5c86636-a7e3-4b1d-ae9a-2a291a875eae - User logged out in controller
+10/30/2024 09:00:22 AM - INFO: f8ba4c46-23b7-4de2-93d3-41887eb946f5 - Recovery password in controller
+10/30/2024 09:00:22 AM - INFO: f8ba4c46-23b7-4de2-93d3-41887eb946f5 - Getting user in db
+10/30/2024 09:00:23 AM - INFO: f8ba4c46-23b7-4de2-93d3-41887eb946f5 - Password reset created token
+10/30/2024 09:00:25 AM - INFO: f8ba4c46-23b7-4de2-93d3-41887eb946f5 - Password reset email sent successfully
+10/30/2024 09:00:25 AM - INFO: f8ba4c46-23b7-4de2-93d3-41887eb946f5 - Password reset email sent successfully in controller
+10/30/2024 09:08:32 AM - INFO: 0356d53c-19fb-4148-b540-a73817c10f7d - Recovery password in controller
+10/30/2024 09:08:32 AM - INFO: 0356d53c-19fb-4148-b540-a73817c10f7d - Getting user in db
+10/30/2024 09:08:33 AM - INFO: 0356d53c-19fb-4148-b540-a73817c10f7d - Password reset created token
+10/30/2024 09:08:35 AM - INFO: 0356d53c-19fb-4148-b540-a73817c10f7d - Password reset email sent successfully
+10/30/2024 09:08:35 AM - INFO: 0356d53c-19fb-4148-b540-a73817c10f7d - Password reset email sent successfully in controller
+10/30/2024 09:10:10 AM - INFO: 7d399526-3898-4b04-80e3-b148093fcd91 - Recovery password in controller
+10/30/2024 09:10:10 AM - INFO: 7d399526-3898-4b04-80e3-b148093fcd91 - Getting user in db
+10/30/2024 09:10:11 AM - INFO: 7d399526-3898-4b04-80e3-b148093fcd91 - Password reset created token
+10/30/2024 09:10:13 AM - INFO: 7d399526-3898-4b04-80e3-b148093fcd91 - Password reset email sent successfully
+10/30/2024 09:10:13 AM - INFO: 7d399526-3898-4b04-80e3-b148093fcd91 - Password reset email sent successfully in controller
+10/30/2024 09:10:49 AM - INFO: 9e71a307-ba7f-44af-be06-19d7d7eefeec - Recovery password in controller
+10/30/2024 09:10:49 AM - INFO: 9e71a307-ba7f-44af-be06-19d7d7eefeec - Getting user in db
+10/30/2024 09:10:50 AM - INFO: 9e71a307-ba7f-44af-be06-19d7d7eefeec - Password reset created token
+10/30/2024 09:10:52 AM - INFO: 9e71a307-ba7f-44af-be06-19d7d7eefeec - Password reset email sent successfully
+10/30/2024 09:10:52 AM - INFO: 9e71a307-ba7f-44af-be06-19d7d7eefeec - Password reset email sent successfully in controller
+10/30/2024 09:15:15 AM - INFO: 143a3c68-7880-4f0a-84a0-e415924e8ac4 - Recovery password in controller
+10/30/2024 09:15:15 AM - INFO: 143a3c68-7880-4f0a-84a0-e415924e8ac4 - Getting user in db
+10/30/2024 09:15:16 AM - INFO: 143a3c68-7880-4f0a-84a0-e415924e8ac4 - Password reset created token
+10/30/2024 09:15:18 AM - INFO: 143a3c68-7880-4f0a-84a0-e415924e8ac4 - Password reset email sent successfully
+10/30/2024 09:15:18 AM - INFO: 143a3c68-7880-4f0a-84a0-e415924e8ac4 - Password reset email sent successfully in controller
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Reset password in controller
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Verify that the authenticated user can only access
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Getting user in db
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Getting in instance
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 29, 21, 59, 52, 871000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$ZkmjTSbd0D5VGtZJqF7y5.ZQid9ylhAZWDwvjFFaoVrdkEPQcmC4O', 'refresh_token': None}
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Updating instance data
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Getting in instance
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 29, 21, 59, 52, 871000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$ZkmjTSbd0D5VGtZJqF7y5.ZQid9ylhAZWDwvjFFaoVrdkEPQcmC4O', 'refresh_token': None}
+10/30/2024 09:16:06 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Updating instance data
+10/30/2024 09:16:07 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Password updated in service
+10/30/2024 09:16:07 AM - INFO: 9fb9fdf0-bc73-4c0b-a0a9-7f033ef3f97e - Password updated in controller
+10/30/2024 10:07:22 AM - INFO: e9911b3a-d346-40fb-851a-c607e436ce9c - Recovery password in controller
+10/30/2024 10:07:22 AM - INFO: e9911b3a-d346-40fb-851a-c607e436ce9c - Getting user in db
+10/30/2024 10:07:23 AM - INFO: e9911b3a-d346-40fb-851a-c607e436ce9c - Password reset created token
+10/30/2024 10:07:26 AM - INFO: e9911b3a-d346-40fb-851a-c607e436ce9c - Password reset email sent successfully
+10/30/2024 10:07:26 AM - INFO: e9911b3a-d346-40fb-851a-c607e436ce9c - Password reset email sent successfully in controller
+10/30/2024 10:11:17 AM - INFO: 64317a2a-ae8f-495c-98cf-09ad2562cb3d - Recovery password in controller
+10/30/2024 10:11:17 AM - INFO: 64317a2a-ae8f-495c-98cf-09ad2562cb3d - Getting user in db
+10/30/2024 10:11:18 AM - INFO: 64317a2a-ae8f-495c-98cf-09ad2562cb3d - Password reset created token
+10/30/2024 10:11:20 AM - INFO: 64317a2a-ae8f-495c-98cf-09ad2562cb3d - Password reset email sent successfully
+10/30/2024 10:11:20 AM - INFO: 64317a2a-ae8f-495c-98cf-09ad2562cb3d - Password reset email sent successfully in controller
+10/30/2024 10:12:28 AM - INFO: 2c12ff65-abe4-41e2-bdc2-1cee16e6b354 - Recovery password in controller
+10/30/2024 10:12:28 AM - INFO: 2c12ff65-abe4-41e2-bdc2-1cee16e6b354 - Getting user in db
+10/30/2024 10:12:29 AM - INFO: 2c12ff65-abe4-41e2-bdc2-1cee16e6b354 - Password reset created token
+10/30/2024 10:12:32 AM - INFO: 2c12ff65-abe4-41e2-bdc2-1cee16e6b354 - Password reset email sent successfully
+10/30/2024 10:12:32 AM - INFO: 2c12ff65-abe4-41e2-bdc2-1cee16e6b354 - Password reset email sent successfully in controller
+10/30/2024 10:15:47 AM - INFO: 15637f4f-ab74-44de-937f-daaebdc9292c - Recovery password in controller
+10/30/2024 10:15:47 AM - INFO: 15637f4f-ab74-44de-937f-daaebdc9292c - Getting user in db
+10/30/2024 10:15:48 AM - INFO: 15637f4f-ab74-44de-937f-daaebdc9292c - Password reset created token
+10/30/2024 10:15:50 AM - INFO: 15637f4f-ab74-44de-937f-daaebdc9292c - Password reset email sent successfully
+10/30/2024 10:15:50 AM - INFO: 15637f4f-ab74-44de-937f-daaebdc9292c - Password reset email sent successfully in controller
+10/30/2024 10:16:38 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Reset password in controller
+10/30/2024 10:16:38 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Verify that the authenticated user can only access
+10/30/2024 10:16:38 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Getting user in db
+10/30/2024 10:16:38 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Getting in instance
+10/30/2024 10:16:38 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 14, 16, 6, 894000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$sBLO36oxXmMih4NfOqcVRu/E/cIWeiQxMg0lMoYjKQAZhJg37ZJV6', 'refresh_token': None}
+10/30/2024 10:16:39 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Updating instance data
+10/30/2024 10:16:39 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Getting in instance
+10/30/2024 10:16:39 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 14, 16, 6, 894000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$sBLO36oxXmMih4NfOqcVRu/E/cIWeiQxMg0lMoYjKQAZhJg37ZJV6', 'refresh_token': None}
+10/30/2024 10:16:39 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Updating instance data
+10/30/2024 10:16:39 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Password updated in service
+10/30/2024 10:16:39 AM - INFO: f6f887ee-57cb-40c4-bbb7-9e4f57bb7024 - Password updated in controller
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - Login user in controller
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - Getting user in db
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - Updating instance data
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - Getting in instance
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 16, 39, 311000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': None}
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - Updating instance data
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - User logged in service
+10/30/2024 10:17:01 AM - INFO: a06fa64a-67e1-4ab9-a99f-1151720e07b2 - User logged in controller
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Refresh token in controller
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Verifying refresh token
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Getting in instance
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 17, 1, 551000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYyMjF9.nx9DvZsDgqV4RtzfCBUWLUAs-S7sxXtHVMQ898Cp0ok'}
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Updating instance data
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Getting in instance
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 17, 1, 551000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYyMjF9.nx9DvZsDgqV4RtzfCBUWLUAs-S7sxXtHVMQ898Cp0ok'}
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Updating instance data
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Token refreshed in service
+10/30/2024 10:17:21 AM - INFO: 51a84c76-9c91-473f-aa4d-5fe3cce9625b - Token refreshed in controller
+10/30/2024 10:17:47 AM - ERROR: c77b997f-2b00-4855-bc2e-182f5cb73da6 - Error: Unauthorized error - Invalid token or signature verification failed - LocationError.Headers
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Logging out user in controller
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Getting user in db
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Getting in instance
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 17, 21, 547000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYyNDF9.96ZuYqsHKhE775fAJ7Ah933eAL-7MzMMM-Ij0uARRQ0'}
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Updating instance data
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Getting in instance
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 17, 21, 547000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYyNDF9.96ZuYqsHKhE775fAJ7Ah933eAL-7MzMMM-Ij0uARRQ0'}
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - Updating instance data
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - User logged out in service
+10/30/2024 10:17:59 AM - INFO: 7cacfbfa-e953-4ace-bc9f-696cf700aad3 - User logged out in controller
+10/30/2024 10:18:10 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Reset password in controller
+10/30/2024 10:18:10 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Verify that the authenticated user can only access
+10/30/2024 10:18:10 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Getting user in db
+10/30/2024 10:18:10 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Getting in instance
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 17, 59, 336000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': None}
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Updating instance data
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Getting in instance
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 17, 59, 336000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$Hgr4osSWtMsUj3y4OHNQ8OKOcnwjrPqqCkcDdNgCiHJgpiBzvcHYi', 'refresh_token': None}
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Updating instance data
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Password updated in service
+10/30/2024 10:18:11 AM - INFO: be90d5fe-82cb-4f2f-aae0-5b8078e98a99 - Password updated in controller
+10/30/2024 10:18:33 AM - INFO: 9fe94074-2977-40c2-a711-1c1c8caa5f0f - Login user in controller
+10/30/2024 10:18:33 AM - INFO: 9fe94074-2977-40c2-a711-1c1c8caa5f0f - Getting user in db
+10/30/2024 10:18:34 AM - ERROR: 9fe94074-2977-40c2-a711-1c1c8caa5f0f - Error: Unauthorized error - Incorrect username or password - LocationError.Body
+10/30/2024 10:18:41 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - Login user in controller
+10/30/2024 10:18:41 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - Getting user in db
+10/30/2024 10:18:42 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - Updating instance data
+10/30/2024 10:18:42 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - Getting in instance
+10/30/2024 10:18:42 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 18, 11, 404000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$yy.z/6O7N5212s8cdGW3DO9shY3cX6bsAEKngQYVVkCW9Ezxd5BXW', 'refresh_token': None}
+10/30/2024 10:18:42 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - Updating instance data
+10/30/2024 10:18:42 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - User logged in service
+10/30/2024 10:18:42 AM - INFO: 5dfc0864-3ec1-4801-babf-9139eb496b4c - User logged in controller
+10/30/2024 01:57:35 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Recovery password in controller
+10/30/2024 01:57:35 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Getting user in db
+10/30/2024 01:57:36 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Password reset created token
+10/30/2024 01:57:36 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Updating instance data
+10/30/2024 01:57:36 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Getting in instance
+10/30/2024 01:57:36 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 15, 18, 42, 241000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$yy.z/6O7N5212s8cdGW3DO9shY3cX6bsAEKngQYVVkCW9Ezxd5BXW', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': ''}
+10/30/2024 01:57:36 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Updating instance data
+10/30/2024 01:57:38 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Password reset email sent successfully
+10/30/2024 01:57:38 PM - INFO: d9dff6c1-2425-43a1-aba9-3b314ad9b022 - Password reset email sent successfully in controller
+10/30/2024 02:03:30 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Recovery password in controller
+10/30/2024 02:03:30 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Getting user in db
+10/30/2024 02:03:31 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Password reset created token
+10/30/2024 02:03:31 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Updating instance data
+10/30/2024 02:03:31 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Getting in instance
+10/30/2024 02:03:32 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 18, 57, 36, 691000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$yy.z/6O7N5212s8cdGW3DO9shY3cX6bsAEKngQYVVkCW9Ezxd5BXW', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'Q-h7T-kbNKIGy7SJKbp7oSKFK47cr5DBwiBzRKbn-FA'}
+10/30/2024 02:03:32 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Updating instance data
+10/30/2024 02:03:33 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Password reset email sent successfully
+10/30/2024 02:03:33 PM - INFO: 1161034b-ee8f-4fd3-abf3-e9f1531187b4 - Password reset email sent successfully in controller
+10/30/2024 02:22:40 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Reset password in controller
+10/30/2024 02:22:40 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Getting user in db
+10/30/2024 02:22:40 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Getting in instance
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 19, 3, 32, 30000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$yy.z/6O7N5212s8cdGW3DO9shY3cX6bsAEKngQYVVkCW9Ezxd5BXW', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'wzFuWwatt803Isa75dGE81lBXwi2WnH37IioWgnWR9g'}
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Verify that the authenticated user can only access
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Updating instance data
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Getting in instance
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 19, 3, 32, 30000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$yy.z/6O7N5212s8cdGW3DO9shY3cX6bsAEKngQYVVkCW9Ezxd5BXW', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'wzFuWwatt803Isa75dGE81lBXwi2WnH37IioWgnWR9g'}
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Updating instance data
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Password updated in service
+10/30/2024 02:22:42 PM - INFO: f249b302-eaa6-404c-b166-a775c81e8d98 - Password updated in controller
+10/30/2024 03:06:39 PM - INFO: 1a3510c7-7f23-4524-9897-5e03994df112 - Creating user in controller
+10/30/2024 03:06:39 PM - INFO: 1a3510c7-7f23-4524-9897-5e03994df112 - Check user in db
+10/30/2024 03:06:40 PM - ERROR: 1a3510c7-7f23-4524-9897-5e03994df112 - Error: Parameter error - There is already a user with that username - LocationError.Body
+10/30/2024 03:06:46 PM - INFO: 67335740-dfb8-4795-a541-de0da56b9457 - Creating user in controller
+10/30/2024 03:06:46 PM - INFO: 67335740-dfb8-4795-a541-de0da56b9457 - Check user in db
+10/30/2024 03:06:46 PM - ERROR: 67335740-dfb8-4795-a541-de0da56b9457 - Error: Parameter error - There is already a user with that username - LocationError.Body
+10/30/2024 03:06:51 PM - INFO: f2ee6783-699c-4621-b28b-3670e7772073 - Creating user in controller
+10/30/2024 03:06:51 PM - INFO: f2ee6783-699c-4621-b28b-3670e7772073 - Check user in db
+10/30/2024 03:06:51 PM - ERROR: f2ee6783-699c-4621-b28b-3670e7772073 - Error: Parameter error - There is already a user with that username - LocationError.Body
+10/30/2024 03:07:11 PM - INFO: e07ecaac-8459-4609-a70f-fdab7f4ea2e0 - Creating user in controller
+10/30/2024 03:07:11 PM - INFO: e07ecaac-8459-4609-a70f-fdab7f4ea2e0 - Check user in db
+10/30/2024 03:07:11 PM - INFO: e07ecaac-8459-4609-a70f-fdab7f4ea2e0 - Creating in instance
+10/30/2024 03:07:12 PM - INFO: e07ecaac-8459-4609-a70f-fdab7f4ea2e0 - Instance created: id='11b9ae32-2fcd-4c22-a57c-02521cf8b69b' create_at=datetime.datetime(2024, 10, 30, 20, 7, 11, 999023) update_at=datetime.datetime(2024, 10, 30, 20, 7, 11, 999023) is_deleted=False username='juana1231' full_name='juana castro' email='juanacastro@email.com' password='$2b$12$T.hNIyYSW7b6YMoKZXJKHeBStstQKMIj2t2n5aeS8WEdPjbAqybdm' is_verified=False refresh_token=None password_token=None
+10/30/2024 03:07:14 PM - INFO: e07ecaac-8459-4609-a70f-fdab7f4ea2e0 - User created in service
+10/30/2024 03:07:14 PM - INFO: e07ecaac-8459-4609-a70f-fdab7f4ea2e0 - User created in controller
+10/30/2024 03:07:37 PM - INFO: 03c0faba-8c43-4f13-a226-28e4c28870f9 - Creating user in controller
+10/30/2024 03:07:37 PM - INFO: 03c0faba-8c43-4f13-a226-28e4c28870f9 - Check user in db
+10/30/2024 03:07:37 PM - INFO: 03c0faba-8c43-4f13-a226-28e4c28870f9 - Creating in instance
+10/30/2024 03:07:37 PM - INFO: 03c0faba-8c43-4f13-a226-28e4c28870f9 - Instance created: id='9991e571-e8ee-429b-9d9d-d00cb5220f2c' create_at=datetime.datetime(2024, 10, 30, 20, 7, 37, 424325) update_at=datetime.datetime(2024, 10, 30, 20, 7, 37, 424325) is_deleted=False username='juana1231' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$nCkCF3FwilMucpRIheu7ZO/EDFFYNey.8Wc7RkAQlq.A97WZ2.xzq' is_verified=False refresh_token=None password_token=None
+10/30/2024 03:07:40 PM - INFO: 03c0faba-8c43-4f13-a226-28e4c28870f9 - User created in service
+10/30/2024 03:07:40 PM - INFO: 03c0faba-8c43-4f13-a226-28e4c28870f9 - User created in controller
+10/30/2024 03:28:07 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Verifying email address
+10/30/2024 03:28:07 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Check user in db
+10/30/2024 03:28:07 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Getting in instance
+10/30/2024 03:28:08 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Instance found: {'_id': '9991e571-e8ee-429b-9d9d-d00cb5220f2c', 'create_at': datetime.datetime(2024, 10, 30, 20, 7, 37, 424000), 'update_at': datetime.datetime(2024, 10, 30, 20, 7, 37, 424000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$nCkCF3FwilMucpRIheu7ZO/EDFFYNey.8Wc7RkAQlq.A97WZ2.xzq', 'is_verified': False, 'refresh_token': None, 'password_token': None}
+10/30/2024 03:28:08 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Updating instance data
+10/30/2024 03:28:08 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Getting in instance
+10/30/2024 03:28:08 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Instance found: {'_id': '9991e571-e8ee-429b-9d9d-d00cb5220f2c', 'create_at': datetime.datetime(2024, 10, 30, 20, 7, 37, 424000), 'update_at': datetime.datetime(2024, 10, 30, 20, 7, 37, 424000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$nCkCF3FwilMucpRIheu7ZO/EDFFYNey.8Wc7RkAQlq.A97WZ2.xzq', 'is_verified': False, 'refresh_token': None, 'password_token': None}
+10/30/2024 03:28:08 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - Updating instance data
+10/30/2024 03:28:08 PM - INFO: a8b76762-600f-4127-84cc-c34fb995d5fb - User verified in db
+10/30/2024 03:41:27 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - Login user in controller
+10/30/2024 03:41:27 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - Getting user in db
+10/30/2024 03:41:29 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - Updating instance data
+10/30/2024 03:41:29 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - Getting in instance
+10/30/2024 03:41:29 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - Instance found: {'_id': '9991e571-e8ee-429b-9d9d-d00cb5220f2c', 'create_at': datetime.datetime(2024, 10, 30, 20, 7, 37, 424000), 'update_at': datetime.datetime(2024, 10, 30, 20, 28, 8, 430000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$nCkCF3FwilMucpRIheu7ZO/EDFFYNey.8Wc7RkAQlq.A97WZ2.xzq', 'is_verified': True, 'refresh_token': None, 'password_token': None}
+10/30/2024 03:41:29 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - Updating instance data
+10/30/2024 03:41:30 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - User logged in service
+10/30/2024 03:41:30 PM - INFO: 20e1bf1b-9712-4fe5-bc23-00a43974d461 - User logged in controller
+10/30/2024 03:42:17 PM - INFO: 11bff2c2-b67d-4d56-ae8e-45991ff2ab6e - Login user in controller
+10/30/2024 03:42:17 PM - INFO: 11bff2c2-b67d-4d56-ae8e-45991ff2ab6e - Getting user in db
+10/30/2024 03:42:18 PM - ERROR: 11bff2c2-b67d-4d56-ae8e-45991ff2ab6e - Error: Unauthorized error - The user has not been verified - LocationError.Body
+10/30/2024 04:13:09 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Recovery password in controller
+10/30/2024 04:13:09 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Getting user in db
+10/30/2024 04:13:10 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Password reset created token
+10/30/2024 04:13:10 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Updating instance data
+10/30/2024 04:13:10 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Getting in instance
+10/30/2024 04:13:10 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 19, 22, 42, 731000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$hGWBw2ePYbbVN.goEfHDZutPnFDS6PfzKzYTv154yz7FENvKysQ/O', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': None}
+10/30/2024 04:13:10 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Updating instance data
+10/30/2024 04:13:13 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Password reset email sent successfully
+10/30/2024 04:13:13 PM - INFO: a21a696d-35fb-4a43-8921-69b0f4726cce - Password reset email sent successfully in controller
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Reset password in controller
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Getting user in db
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Getting in instance
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 21, 13, 10, 880000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$hGWBw2ePYbbVN.goEfHDZutPnFDS6PfzKzYTv154yz7FENvKysQ/O', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'zmPQYSeL8b_7im0slPI9tJ-3ajBmjdYF2TTDs20BhNw', 'is_verified': False}
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Verify that the authenticated user can only access
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Updating instance data
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Getting in instance
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 21, 13, 10, 880000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$hGWBw2ePYbbVN.goEfHDZutPnFDS6PfzKzYTv154yz7FENvKysQ/O', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'zmPQYSeL8b_7im0slPI9tJ-3ajBmjdYF2TTDs20BhNw', 'is_verified': False}
+10/30/2024 04:14:34 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Updating instance data
+10/30/2024 04:14:35 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Password updated in service
+10/30/2024 04:14:35 PM - INFO: e4d4f4c0-5690-483c-bba6-f1529fa9792d - Password updated in controller
+10/30/2024 04:25:32 PM - INFO: 33686504-db28-41a3-af8a-01b3ffb434f4 - Login user in controller
+10/30/2024 04:25:32 PM - INFO: 33686504-db28-41a3-af8a-01b3ffb434f4 - Getting user in db
+10/30/2024 04:25:33 PM - ERROR: 33686504-db28-41a3-af8a-01b3ffb434f4 - Error: Unauthorized error - The user has not been verified - LocationError.Body
+10/30/2024 04:26:05 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - Login user in controller
+10/30/2024 04:26:05 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - Getting user in db
+10/30/2024 04:26:05 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - Updating instance data
+10/30/2024 04:26:05 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - Getting in instance
+10/30/2024 04:26:05 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - Instance found: {'_id': '10576c0d-545a-4d47-a5cf-50865d6f4be6', 'create_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'update_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'is_deleted': False, 'username': 'juana1230', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm', 'refresh_token': None, 'password_token': '', 'is_verified': True}
+10/30/2024 04:26:05 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - Updating instance data
+10/30/2024 04:26:06 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - User logged in service
+10/30/2024 04:26:06 PM - INFO: 5d20311c-2e31-49a6-be6f-97eeb47a4663 - User logged in controller
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Refresh token in controller
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Verifying refresh token
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Getting in instance
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Instance found: {'_id': '10576c0d-545a-4d47-a5cf-50865d6f4be6', 'create_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'update_at': datetime.datetime(2024, 10, 30, 21, 26, 5, 979000), 'is_deleted': False, 'username': 'juana1230', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwNTc2YzBkLTU0NWEtNGQ0Ny1hNWNmLTUwODY1ZDZmNGJlNiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzAiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzA5MjgzNjV9.yoUHYdXZp4Ny-BJYAgcxk6v1Uyc-tXGi0hObEFINlPM', 'password_token': '', 'is_verified': True}
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Updating instance data
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Getting in instance
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Instance found: {'_id': '10576c0d-545a-4d47-a5cf-50865d6f4be6', 'create_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'update_at': datetime.datetime(2024, 10, 30, 21, 26, 5, 979000), 'is_deleted': False, 'username': 'juana1230', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwNTc2YzBkLTU0NWEtNGQ0Ny1hNWNmLTUwODY1ZDZmNGJlNiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzAiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzA5MjgzNjV9.yoUHYdXZp4Ny-BJYAgcxk6v1Uyc-tXGi0hObEFINlPM', 'password_token': '', 'is_verified': True}
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Updating instance data
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Token refreshed in service
+10/30/2024 04:26:28 PM - INFO: 3c876642-6e65-4c76-bfc5-5ba96799cd7e - Token refreshed in controller
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - Getting user in controller
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - Verify that the authenticated user can only access their own information
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - Getting user in db
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - Getting in instance
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - Instance found: {'_id': '10576c0d-545a-4d47-a5cf-50865d6f4be6', 'create_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'update_at': datetime.datetime(2024, 10, 30, 21, 26, 28, 779000), 'is_deleted': False, 'username': 'juana1230', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwNTc2YzBkLTU0NWEtNGQ0Ny1hNWNmLTUwODY1ZDZmNGJlNiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzAiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzA5MjgzODh9.JZgZBVvDL1ldjxMZo_ba2NZU9Up1FwkbVo2zy4Ax-J8', 'password_token': '', 'is_verified': True}
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - User found in service
+10/30/2024 04:26:55 PM - INFO: 857cba41-0f5b-4c8d-8b7a-29c2f484b4d5 - User found in controller
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Logging out user in controller
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Getting user in db
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Getting in instance
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Instance found: {'_id': '10576c0d-545a-4d47-a5cf-50865d6f4be6', 'create_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'update_at': datetime.datetime(2024, 10, 30, 21, 26, 28, 779000), 'is_deleted': False, 'username': 'juana1230', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwNTc2YzBkLTU0NWEtNGQ0Ny1hNWNmLTUwODY1ZDZmNGJlNiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzAiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzA5MjgzODh9.JZgZBVvDL1ldjxMZo_ba2NZU9Up1FwkbVo2zy4Ax-J8', 'password_token': '', 'is_verified': True}
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Updating instance data
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Getting in instance
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Instance found: {'_id': '10576c0d-545a-4d47-a5cf-50865d6f4be6', 'create_at': datetime.datetime(2024, 10, 28, 21, 29, 52, 505000), 'update_at': datetime.datetime(2024, 10, 30, 21, 26, 28, 779000), 'is_deleted': False, 'username': 'juana1230', 'full_name': 'juana castro', 'email': 'juanacastro@email.com', 'password': '$2b$12$i6Ve.FY2XyOUl3Dd3SJjfOAR2K4Rspg0iCPn1JE2nElUz8kmmHJQm', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwNTc2YzBkLTU0NWEtNGQ0Ny1hNWNmLTUwODY1ZDZmNGJlNiIsImVtYWlsIjoianVhbmFjYXN0cm9AZW1haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzAiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzA5MjgzODh9.JZgZBVvDL1ldjxMZo_ba2NZU9Up1FwkbVo2zy4Ax-J8', 'password_token': '', 'is_verified': True}
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - Updating instance data
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - User logged out in service
+10/30/2024 04:27:14 PM - INFO: e653c01b-44fb-4fb9-9dec-1f519e55f184 - User logged out in controller
+11/01/2024 10:01:36 AM - INFO: 59ffe576-ee3a-4943-954e-d82d1784d47b - Creating user in controller
+11/01/2024 10:01:36 AM - INFO: 59ffe576-ee3a-4943-954e-d82d1784d47b - Check user in db
+11/01/2024 10:01:37 AM - INFO: 59ffe576-ee3a-4943-954e-d82d1784d47b - Creating in instance
+11/01/2024 10:01:37 AM - INFO: 59ffe576-ee3a-4943-954e-d82d1784d47b - Instance created: id='95ea082d-4865-42f0-8966-1e56bd920e3c' create_at=datetime.datetime(2024, 11, 1, 15, 1, 37, 733776) update_at=datetime.datetime(2024, 11, 1, 15, 1, 37, 733776) is_deleted=False username='juana1232' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$8IQOhn.OqRDOPj/4Eq2US.mvY11sb8FoGNr76mSXJC0.HmKaOITDS' is_verified=False verification_token='empjZN_UGz09E0XTYG1GTkr6eGtFYMrU-E1vddc3Sy8' refresh_token=None password_token=None
+11/01/2024 10:01:40 AM - INFO: 59ffe576-ee3a-4943-954e-d82d1784d47b - User created in service
+11/01/2024 10:01:40 AM - INFO: 59ffe576-ee3a-4943-954e-d82d1784d47b - User created in controller
+11/01/2024 10:03:58 AM - INFO: 7207ec04-bcda-4b19-9b71-dbe4e7bd2491 - Creating user in controller
+11/01/2024 10:03:58 AM - INFO: 7207ec04-bcda-4b19-9b71-dbe4e7bd2491 - Check user in db
+11/01/2024 10:03:59 AM - ERROR: 7207ec04-bcda-4b19-9b71-dbe4e7bd2491 - Error: Parameter error - There is already a user with that username - LocationError.Body
+11/01/2024 10:04:09 AM - INFO: e3aa8e6c-4cf9-4d2b-9ced-1661e54d2a1a - Creating user in controller
+11/01/2024 10:04:09 AM - INFO: e3aa8e6c-4cf9-4d2b-9ced-1661e54d2a1a - Check user in db
+11/01/2024 10:04:09 AM - INFO: e3aa8e6c-4cf9-4d2b-9ced-1661e54d2a1a - Creating in instance
+11/01/2024 10:04:09 AM - INFO: e3aa8e6c-4cf9-4d2b-9ced-1661e54d2a1a - Instance created: id='8d02ba01-c1dc-41e1-aa06-ab8e297df0e0' create_at=datetime.datetime(2024, 11, 1, 15, 4, 9, 664570) update_at=datetime.datetime(2024, 11, 1, 15, 4, 9, 664570) is_deleted=False username='juana1232' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$3iK1H.CEH0lD.deKjXMtDeSzbcVyOc26tCglQdKQjNi63/yWSeWJi' is_verified=False verification_token='Sob8zN7MtQUWZR47x2B3_WV41OBRGp-nVaZlqscP4Fk' refresh_token=None password_token=None
+11/01/2024 10:04:12 AM - INFO: e3aa8e6c-4cf9-4d2b-9ced-1661e54d2a1a - User created in service
+11/01/2024 10:04:12 AM - INFO: e3aa8e6c-4cf9-4d2b-9ced-1661e54d2a1a - User created in controller
+11/01/2024 10:23:31 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Verifying email address
+11/01/2024 10:23:31 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Check user in db
+11/01/2024 10:23:31 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Getting in instance
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Instance found: {'_id': '8d02ba01-c1dc-41e1-aa06-ab8e297df0e0', 'create_at': datetime.datetime(2024, 11, 1, 15, 4, 9, 664000), 'update_at': datetime.datetime(2024, 11, 1, 15, 4, 9, 664000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$3iK1H.CEH0lD.deKjXMtDeSzbcVyOc26tCglQdKQjNi63/yWSeWJi', 'is_verified': False, 'verification_token': 'Sob8zN7MtQUWZR47x2B3_WV41OBRGp-nVaZlqscP4Fk', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Verify that the authenticated user can only access
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Updating instance data
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Getting in instance
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Instance found: {'_id': '8d02ba01-c1dc-41e1-aa06-ab8e297df0e0', 'create_at': datetime.datetime(2024, 11, 1, 15, 4, 9, 664000), 'update_at': datetime.datetime(2024, 11, 1, 15, 4, 9, 664000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$3iK1H.CEH0lD.deKjXMtDeSzbcVyOc26tCglQdKQjNi63/yWSeWJi', 'is_verified': False, 'verification_token': 'Sob8zN7MtQUWZR47x2B3_WV41OBRGp-nVaZlqscP4Fk', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - Updating instance data
+11/01/2024 10:23:32 AM - INFO: 9d6d8933-e760-4def-8676-d68ea185ecad - User verified in db
+11/01/2024 10:24:50 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Verifying email address
+11/01/2024 10:24:50 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Check user in db
+11/01/2024 10:24:50 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Getting in instance
+11/01/2024 10:24:51 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Instance found: {'_id': '8d02ba01-c1dc-41e1-aa06-ab8e297df0e0', 'create_at': datetime.datetime(2024, 11, 1, 15, 4, 9, 664000), 'update_at': datetime.datetime(2024, 11, 1, 15, 23, 32, 689000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$3iK1H.CEH0lD.deKjXMtDeSzbcVyOc26tCglQdKQjNi63/yWSeWJi', 'is_verified': True, 'verification_token': 'Sob8zN7MtQUWZR47x2B3_WV41OBRGp-nVaZlqscP4Fk', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:24:51 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Verify that the authenticated user can only access
+11/01/2024 10:24:51 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Updating instance data
+11/01/2024 10:24:51 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Getting in instance
+11/01/2024 10:24:51 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Instance found: {'_id': '8d02ba01-c1dc-41e1-aa06-ab8e297df0e0', 'create_at': datetime.datetime(2024, 11, 1, 15, 4, 9, 664000), 'update_at': datetime.datetime(2024, 11, 1, 15, 23, 32, 689000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$3iK1H.CEH0lD.deKjXMtDeSzbcVyOc26tCglQdKQjNi63/yWSeWJi', 'is_verified': True, 'verification_token': 'Sob8zN7MtQUWZR47x2B3_WV41OBRGp-nVaZlqscP4Fk', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:24:51 AM - INFO: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Updating instance data
+11/01/2024 10:24:51 AM - ERROR: a42c9f8e-4cbb-448e-902d-d799f7de0a51 - Error: Unexpected error - 1 validation error for UsersModel
+verification_token
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type - LocationError.Server
+11/01/2024 10:25:14 AM - INFO: 2d054e88-5923-433e-917c-df661ffbbc04 - Creating user in controller
+11/01/2024 10:25:14 AM - INFO: 2d054e88-5923-433e-917c-df661ffbbc04 - Check user in db
+11/01/2024 10:25:15 AM - INFO: 2d054e88-5923-433e-917c-df661ffbbc04 - Creating in instance
+11/01/2024 10:25:15 AM - INFO: 2d054e88-5923-433e-917c-df661ffbbc04 - Instance created: id='b80c78b5-15b8-40f9-8989-3fbc81853b60' create_at=datetime.datetime(2024, 11, 1, 15, 25, 15, 359162) update_at=datetime.datetime(2024, 11, 1, 15, 25, 15, 359162) is_deleted=False username='juana1232' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$aTNKnF0O9r5yUNzQ/644Fe8iJ1XNtOfktQjQB4L6i/bNSGEjSrqpi' is_verified=False verification_token='V7QProGDXiz6ZcQgOSL1UcnKGNaJQupBuflEuwre5b4' refresh_token=None password_token=None
+11/01/2024 10:25:17 AM - INFO: 2d054e88-5923-433e-917c-df661ffbbc04 - User created in service
+11/01/2024 10:25:17 AM - INFO: 2d054e88-5923-433e-917c-df661ffbbc04 - User created in controller
+11/01/2024 10:25:40 AM - INFO: bcb36c64-2a5a-48da-9634-3a48d77da4e6 - Verifying email address
+11/01/2024 10:25:40 AM - INFO: bcb36c64-2a5a-48da-9634-3a48d77da4e6 - Check user in db
+11/01/2024 10:25:40 AM - INFO: bcb36c64-2a5a-48da-9634-3a48d77da4e6 - Getting in instance
+11/01/2024 10:25:41 AM - ERROR: bcb36c64-2a5a-48da-9634-3a48d77da4e6 - Error: Object not found - Instance not found - LocationError.Params
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Verifying email address
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Check user in db
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Getting in instance
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Instance found: {'_id': 'b80c78b5-15b8-40f9-8989-3fbc81853b60', 'create_at': datetime.datetime(2024, 11, 1, 15, 25, 15, 359000), 'update_at': datetime.datetime(2024, 11, 1, 15, 25, 15, 359000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$aTNKnF0O9r5yUNzQ/644Fe8iJ1XNtOfktQjQB4L6i/bNSGEjSrqpi', 'is_verified': False, 'verification_token': 'V7QProGDXiz6ZcQgOSL1UcnKGNaJQupBuflEuwre5b4', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Verify that the authenticated user can only access
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Updating instance data
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Getting in instance
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Instance found: {'_id': 'b80c78b5-15b8-40f9-8989-3fbc81853b60', 'create_at': datetime.datetime(2024, 11, 1, 15, 25, 15, 359000), 'update_at': datetime.datetime(2024, 11, 1, 15, 25, 15, 359000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$aTNKnF0O9r5yUNzQ/644Fe8iJ1XNtOfktQjQB4L6i/bNSGEjSrqpi', 'is_verified': False, 'verification_token': 'V7QProGDXiz6ZcQgOSL1UcnKGNaJQupBuflEuwre5b4', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:25:52 AM - INFO: aa216807-aa54-42e4-8083-c1023efb88b4 - Updating instance data
+11/01/2024 10:25:52 AM - ERROR: aa216807-aa54-42e4-8083-c1023efb88b4 - Error: Unexpected error - 1 validation error for UsersModel
+verification_token
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type - LocationError.Server
+11/01/2024 10:29:19 AM - INFO: 1a5751c3-ae24-4152-a5b6-1227de9ff60d - Creating user in controller
+11/01/2024 10:29:19 AM - INFO: 1a5751c3-ae24-4152-a5b6-1227de9ff60d - Check user in db
+11/01/2024 10:29:20 AM - INFO: 1a5751c3-ae24-4152-a5b6-1227de9ff60d - Creating in instance
+11/01/2024 10:29:20 AM - INFO: 1a5751c3-ae24-4152-a5b6-1227de9ff60d - Instance created: id='45aa2a4f-8cd7-45b2-8ed3-4e6f7ef33a1f' create_at=datetime.datetime(2024, 11, 1, 15, 29, 20, 838822) update_at=datetime.datetime(2024, 11, 1, 15, 29, 20, 838822) is_deleted=False username='juana1232' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$tbDOJcvSHehzbw9j17j37uLuvc.yVUpMxkMBgx5FXTd4iReJifPKy' is_verified=False verification_token='CSerYViSisWS4Cjboh0DLmuH1Hm864uwQ3tZRqK0Q78' refresh_token=None password_token=None
+11/01/2024 10:29:23 AM - INFO: 1a5751c3-ae24-4152-a5b6-1227de9ff60d - User created in service
+11/01/2024 10:29:23 AM - INFO: 1a5751c3-ae24-4152-a5b6-1227de9ff60d - User created in controller
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Verifying email address
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Check user in db
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Getting in instance
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Instance found: {'_id': '45aa2a4f-8cd7-45b2-8ed3-4e6f7ef33a1f', 'create_at': datetime.datetime(2024, 11, 1, 15, 29, 20, 838000), 'update_at': datetime.datetime(2024, 11, 1, 15, 29, 20, 838000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$tbDOJcvSHehzbw9j17j37uLuvc.yVUpMxkMBgx5FXTd4iReJifPKy', 'is_verified': False, 'verification_token': 'CSerYViSisWS4Cjboh0DLmuH1Hm864uwQ3tZRqK0Q78', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Verify that the authenticated user can only access
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Updating instance data
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Getting in instance
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Instance found: {'_id': '45aa2a4f-8cd7-45b2-8ed3-4e6f7ef33a1f', 'create_at': datetime.datetime(2024, 11, 1, 15, 29, 20, 838000), 'update_at': datetime.datetime(2024, 11, 1, 15, 29, 20, 838000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$tbDOJcvSHehzbw9j17j37uLuvc.yVUpMxkMBgx5FXTd4iReJifPKy', 'is_verified': False, 'verification_token': 'CSerYViSisWS4Cjboh0DLmuH1Hm864uwQ3tZRqK0Q78', 'refresh_token': None, 'password_token': None}
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - Updating instance data
+11/01/2024 10:29:56 AM - INFO: 2a337840-3c55-4f1d-bd2c-bba65aad5556 - User verified in db
+11/01/2024 10:36:57 AM - INFO: 6fb680b9-5234-41e1-9606-0e1ce9676212 - Verifying email address
+11/01/2024 10:36:57 AM - INFO: 6fb680b9-5234-41e1-9606-0e1ce9676212 - Check user in db
+11/01/2024 10:36:57 AM - INFO: 6fb680b9-5234-41e1-9606-0e1ce9676212 - Getting in instance
+11/01/2024 10:36:58 AM - INFO: 6fb680b9-5234-41e1-9606-0e1ce9676212 - Instance found: {'_id': '45aa2a4f-8cd7-45b2-8ed3-4e6f7ef33a1f', 'create_at': datetime.datetime(2024, 11, 1, 15, 29, 20, 838000), 'update_at': datetime.datetime(2024, 11, 1, 15, 29, 56, 626000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$tbDOJcvSHehzbw9j17j37uLuvc.yVUpMxkMBgx5FXTd4iReJifPKy', 'is_verified': True, 'verification_token': None, 'refresh_token': None, 'password_token': None}
+11/01/2024 10:36:58 AM - INFO: 6fb680b9-5234-41e1-9606-0e1ce9676212 - Verify that the authenticated user can only access
+11/01/2024 10:36:58 AM - ERROR: 6fb680b9-5234-41e1-9606-0e1ce9676212 - Error: Unauthorized error - Invalid token - LocationError.Body
+11/01/2024 10:37:00 AM - INFO: acd901d7-50e0-4f0f-9304-1d09025f6c9e - Verifying email address
+11/01/2024 10:37:00 AM - INFO: acd901d7-50e0-4f0f-9304-1d09025f6c9e - Check user in db
+11/01/2024 10:37:00 AM - INFO: acd901d7-50e0-4f0f-9304-1d09025f6c9e - Getting in instance
+11/01/2024 10:37:00 AM - INFO: acd901d7-50e0-4f0f-9304-1d09025f6c9e - Instance found: {'_id': '45aa2a4f-8cd7-45b2-8ed3-4e6f7ef33a1f', 'create_at': datetime.datetime(2024, 11, 1, 15, 29, 20, 838000), 'update_at': datetime.datetime(2024, 11, 1, 15, 29, 56, 626000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$tbDOJcvSHehzbw9j17j37uLuvc.yVUpMxkMBgx5FXTd4iReJifPKy', 'is_verified': True, 'verification_token': None, 'refresh_token': None, 'password_token': None}
+11/01/2024 10:37:00 AM - INFO: acd901d7-50e0-4f0f-9304-1d09025f6c9e - Verify that the authenticated user can only access
+11/01/2024 10:37:00 AM - ERROR: acd901d7-50e0-4f0f-9304-1d09025f6c9e - Error: Unauthorized error - Invalid token - LocationError.Body
+11/01/2024 11:03:52 AM - INFO: 0cdf9335-7617-48e9-81db-879018bb514b - Recovery password in controller
+11/01/2024 11:03:52 AM - INFO: 0cdf9335-7617-48e9-81db-879018bb514b - Getting user in db
+11/01/2024 11:03:53 AM - ERROR: 0cdf9335-7617-48e9-81db-879018bb514b - Error: Unexpected error - 1 validation error for UsersModel
+verification_token
+  Field required [type=missing, input_value={'_id': '5f613245-2930-40...e, 'is_verified': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing - LocationError.Server
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Recovery password in controller
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Getting user in db
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Password reset created token
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Updating instance data
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Getting in instance
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 10, 30, 21, 14, 34, 857000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': None, 'is_verified': False, 'verification_token': None}
+11/01/2024 11:12:23 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Updating instance data
+11/01/2024 11:12:26 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Password reset email sent successfully
+11/01/2024 11:12:26 AM - INFO: 771f3f02-df93-44db-ad68-72ec86894b91 - Password reset email sent successfully in controller
+11/01/2024 11:14:19 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Recovery password in controller
+11/01/2024 11:14:19 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Getting user in db
+11/01/2024 11:14:25 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Password reset created token
+11/01/2024 11:14:25 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Updating instance data
+11/01/2024 11:14:25 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Getting in instance
+11/01/2024 11:14:25 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 16, 12, 23, 230000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'dJm3QO7W3PiHN26y-uXChzbwYHig0zCHNxSE6GbhGmY', 'is_verified': False, 'verification_token': None}
+11/01/2024 11:14:25 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Updating instance data
+11/01/2024 11:14:27 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Password reset email sent successfully
+11/01/2024 11:14:27 AM - INFO: 968f8f3f-5dde-4907-a245-80608e973e4d - Password reset email sent successfully in controller
+11/01/2024 11:15:52 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Recovery password in controller
+11/01/2024 11:15:57 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Getting user in db
+11/01/2024 11:16:04 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Password reset created token
+11/01/2024 11:16:06 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Updating instance data
+11/01/2024 11:16:06 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Getting in instance
+11/01/2024 11:16:06 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 16, 14, 25, 220000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'WSOYFF9OJ6GM_YkUFf9zXaSgRxxHsdDBdJLyu6wlAmo', 'is_verified': False, 'verification_token': None}
+11/01/2024 11:16:06 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Updating instance data
+11/01/2024 11:21:50 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Password reset email sent successfully
+11/01/2024 11:21:53 AM - INFO: c548f28d-4fae-4c0a-9422-43f6d1d0da61 - Password reset email sent successfully in controller
+11/01/2024 11:27:21 AM - INFO: 34d89f4e-b296-49fd-a7ed-5ca668901e40 - Creating user in controller
+11/01/2024 11:27:21 AM - INFO: 34d89f4e-b296-49fd-a7ed-5ca668901e40 - Check user in db
+11/01/2024 11:27:22 AM - INFO: 34d89f4e-b296-49fd-a7ed-5ca668901e40 - Creating in instance
+11/01/2024 11:27:22 AM - INFO: 34d89f4e-b296-49fd-a7ed-5ca668901e40 - Instance created: id='e31f64c5-356d-4c27-a255-f11d55766397' create_at=datetime.datetime(2024, 11, 1, 16, 27, 22, 324159) update_at=datetime.datetime(2024, 11, 1, 16, 27, 22, 324159) is_deleted=False username='juana1232' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$SKlDrUG0JHxvtbm3Z8Liq.s.VEp/tNorswG/SL7qF7gAWL3huCVZO' is_verified=False verification_token='9zdnOwVKehJs9tgMdka3KuDwytJPLVDIyJkeTx9mb5c' refresh_token=None password_token=None
+11/01/2024 11:27:24 AM - INFO: 34d89f4e-b296-49fd-a7ed-5ca668901e40 - User created in service
+11/01/2024 11:27:24 AM - INFO: 34d89f4e-b296-49fd-a7ed-5ca668901e40 - User created in controller
+11/01/2024 11:27:51 AM - INFO: 8bec2c84-15d5-420d-969d-9f873f7b0a3a - Login user in controller
+11/01/2024 11:27:51 AM - INFO: 8bec2c84-15d5-420d-969d-9f873f7b0a3a - Getting user in db
+11/01/2024 11:27:51 AM - ERROR: 8bec2c84-15d5-420d-969d-9f873f7b0a3a - Error: Unauthorized error - The user has not been verified - LocationError.Body
+11/01/2024 11:29:04 AM - INFO: 9005e928-aae1-42ad-bbab-35bd0d343b3c - Creating user in controller
+11/01/2024 11:29:04 AM - INFO: 9005e928-aae1-42ad-bbab-35bd0d343b3c - Check user in db
+11/01/2024 11:29:05 AM - ERROR: 9005e928-aae1-42ad-bbab-35bd0d343b3c - Error: Parameter error - There is already a user with that username - LocationError.Body
+11/01/2024 11:29:17 AM - INFO: ff66e4fb-614b-45f1-a896-40704a2fa125 - Creating user in controller
+11/01/2024 11:29:17 AM - INFO: ff66e4fb-614b-45f1-a896-40704a2fa125 - Check user in db
+11/01/2024 11:29:17 AM - INFO: ff66e4fb-614b-45f1-a896-40704a2fa125 - Creating in instance
+11/01/2024 11:29:17 AM - INFO: ff66e4fb-614b-45f1-a896-40704a2fa125 - Instance created: id='978dcc0a-9d29-4502-8584-cf58100ff4dc' create_at=datetime.datetime(2024, 11, 1, 16, 29, 17, 805820) update_at=datetime.datetime(2024, 11, 1, 16, 29, 17, 805820) is_deleted=False username='juana12321' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$Zjo55eLbEEF8Dswu3egk/.9GowfkOkUe5IqicFhzykIru.VduYe2y' is_verified=False verification_token='Nb4pMs-8h9mCpttR3y-mGRyHw5VOmDWoKRbZG74BIkM' refresh_token=None password_token=None
+11/01/2024 11:29:19 AM - INFO: ff66e4fb-614b-45f1-a896-40704a2fa125 - User created in service
+11/01/2024 11:29:19 AM - INFO: ff66e4fb-614b-45f1-a896-40704a2fa125 - User created in controller
+11/01/2024 11:31:15 AM - INFO: 9ee7440b-d02b-4b4c-86db-6a3467357b6d - Creating user in controller
+11/01/2024 11:31:15 AM - INFO: 9ee7440b-d02b-4b4c-86db-6a3467357b6d - Check user in db
+11/01/2024 11:31:17 AM - INFO: 9ee7440b-d02b-4b4c-86db-6a3467357b6d - Creating in instance
+11/01/2024 11:31:17 AM - INFO: 9ee7440b-d02b-4b4c-86db-6a3467357b6d - Instance created: id='442bc19f-9654-45cf-8100-515ac6ab118e' create_at=datetime.datetime(2024, 11, 1, 16, 31, 17, 119333) update_at=datetime.datetime(2024, 11, 1, 16, 31, 17, 119333) is_deleted=False username='juana123213' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$/P7rBbtMQCM9wBwc42sGeesEHBGvCnza.cpLrw8wd2lyNF8RPzVE.' is_verified=False verification_token='FqeXHeA8-o7vNm82h68frz0dIpyhyBqvC593W4zbIic' refresh_token=None password_token=None
+11/01/2024 11:31:17 AM - ERROR: 9ee7440b-d02b-4b4c-86db-6a3467357b6d - Error: Unexpected error - 'NoneType' object does not support item assignment - LocationError.Server
+11/01/2024 11:32:34 AM - INFO: 06702ecc-a80e-4279-bd7c-e15501862ea6 - Creating user in controller
+11/01/2024 11:32:34 AM - INFO: 06702ecc-a80e-4279-bd7c-e15501862ea6 - Check user in db
+11/01/2024 11:32:35 AM - INFO: 06702ecc-a80e-4279-bd7c-e15501862ea6 - Creating in instance
+11/01/2024 11:32:35 AM - INFO: 06702ecc-a80e-4279-bd7c-e15501862ea6 - Instance created: id='275a5975-e83f-4951-aa08-6416c1215238' create_at=datetime.datetime(2024, 11, 1, 16, 32, 35, 428895) update_at=datetime.datetime(2024, 11, 1, 16, 32, 35, 428895) is_deleted=False username='juana12313' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$w4mFTw6/ehh4sCCMWRxrNOMBBdPHm8FPxlk0CL0p7H9sb1bxZJ1tq' is_verified=False verification_token='S-_s60nd3lo0RbmqseP6Yk0bdtWPeQaJbNTSgY-ekbs' refresh_token=None password_token=None
+11/01/2024 11:32:36 AM - ERROR: 06702ecc-a80e-4279-bd7c-e15501862ea6 - Error: Unexpected error - 'NoneType' object does not support item assignment - LocationError.Server
+11/01/2024 11:36:06 AM - INFO: 832b253a-71ee-40d4-9177-e2cfa94c01a0 - Creating user in controller
+11/01/2024 11:36:06 AM - INFO: 832b253a-71ee-40d4-9177-e2cfa94c01a0 - Check user in db
+11/01/2024 11:36:07 AM - ERROR: 832b253a-71ee-40d4-9177-e2cfa94c01a0 - Error: Parameter error - There is already a user with that username - LocationError.Body
+11/01/2024 11:36:13 AM - INFO: ad076dea-a9e9-4983-9dc0-2da235e5bf96 - Creating user in controller
+11/01/2024 11:36:13 AM - INFO: ad076dea-a9e9-4983-9dc0-2da235e5bf96 - Check user in db
+11/01/2024 11:36:13 AM - INFO: ad076dea-a9e9-4983-9dc0-2da235e5bf96 - Creating in instance
+11/01/2024 11:36:13 AM - INFO: ad076dea-a9e9-4983-9dc0-2da235e5bf96 - Instance created: id='e2804d18-09cd-412b-b753-9f951eda3b49' create_at=datetime.datetime(2024, 11, 1, 16, 36, 13, 597611) update_at=datetime.datetime(2024, 11, 1, 16, 36, 13, 597611) is_deleted=False username='juana12318' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$UDM3EzI.FYZ5/ZJ2ZBDc8OY9cqxFm7NGn5cjvs6nEEA9cCnBPsLly' is_verified=False verification_token='NUjBliLYo9P69VA5O9zARXU_57JczxruBAM9tRrR0hU' refresh_token=None password_token=None
+11/01/2024 11:36:14 AM - ERROR: ad076dea-a9e9-4983-9dc0-2da235e5bf96 - Error: Unexpected error - 'NoneType' object does not support item assignment - LocationError.Server
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Recovery password in controller
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Getting user in db
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Password reset created token
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Updating instance data
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Getting in instance
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 16, 16, 6, 894000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'TTWCWDwFweeXD4NDbtVZpANW2LrF503E1PHka5HHxTE', 'is_verified': False, 'verification_token': None}
+11/01/2024 11:36:18 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Updating instance data
+11/01/2024 11:36:20 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Password reset email sent successfully
+11/01/2024 11:36:20 AM - INFO: 1b12e406-8050-4d5b-a733-97c08cb40bf3 - Password reset email sent successfully in controller
+11/01/2024 11:37:25 AM - INFO: fbdaf3f9-223e-429e-a85f-3ef297a0f8ca - Creating user in controller
+11/01/2024 11:37:25 AM - INFO: fbdaf3f9-223e-429e-a85f-3ef297a0f8ca - Check user in db
+11/01/2024 11:37:26 AM - INFO: fbdaf3f9-223e-429e-a85f-3ef297a0f8ca - Creating in instance
+11/01/2024 11:37:27 AM - INFO: fbdaf3f9-223e-429e-a85f-3ef297a0f8ca - Instance created: id='17c44b3e-c802-40d9-9e33-06c24d14c878' create_at=datetime.datetime(2024, 11, 1, 16, 37, 26, 931214) update_at=datetime.datetime(2024, 11, 1, 16, 37, 26, 931214) is_deleted=False username='juana1231' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$guZAL3ljIOAjZ4hBQPMlw.PbpBZeLHWeyw.s7PdPZPmMS.I0Hj9qC' is_verified=False verification_token='Hyr9Kh5hlMwSChbXZtwJh5-3V-6ogD-t5H-muzxYUNo' refresh_token=None password_token=None
+11/01/2024 11:37:28 AM - INFO: fbdaf3f9-223e-429e-a85f-3ef297a0f8ca - User created in service
+11/01/2024 11:37:28 AM - INFO: fbdaf3f9-223e-429e-a85f-3ef297a0f8ca - User created in controller
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Recovery password in controller
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Getting user in db
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Password reset created token
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Updating instance data
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Getting in instance
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 16, 36, 18, 891000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'xPxUAUIctkpnwzBHjJjdyDp3bxk1-yiacOlSPS1sN74', 'is_verified': False, 'verification_token': None}
+11/01/2024 11:37:51 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Updating instance data
+11/01/2024 11:37:53 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Password reset email sent successfully
+11/01/2024 11:37:53 AM - INFO: c9892384-701b-4fa9-8c4c-d5599616bd78 - Password reset email sent successfully in controller
+11/01/2024 02:19:46 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Recovery password in controller
+11/01/2024 02:19:46 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Getting user in db
+11/01/2024 02:19:46 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Password reset created token
+11/01/2024 02:19:46 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Updating instance data
+11/01/2024 02:19:46 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Getting in instance
+11/01/2024 02:19:47 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 16, 37, 51, 295000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'tWi_Q7UJRaEnoaby4f07wbipnHwMbF-BJlRinaD8Wps', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:19:47 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Updating instance data
+11/01/2024 02:19:49 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Password reset email sent successfully
+11/01/2024 02:19:49 PM - INFO: 9811e987-4e6f-4a1d-b6d2-2512800fe40d - Password reset email sent successfully in controller
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Recovery password in controller
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Getting user in db
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Password reset created token
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Updating instance data
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Getting in instance
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 19, 47, 19000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'MugM9JwiF50ak3c8LObzfgSZGHqdLQFAX8w9sLAbzCY', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:21:55 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Updating instance data
+11/01/2024 02:21:58 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Password reset email sent successfully
+11/01/2024 02:21:58 PM - INFO: 8e829816-342b-401e-826e-c3c8e17c7307 - Password reset email sent successfully in controller
+11/01/2024 02:25:46 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Recovery password in controller
+11/01/2024 02:25:46 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Getting user in db
+11/01/2024 02:25:47 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Password reset created token
+11/01/2024 02:25:47 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Updating instance data
+11/01/2024 02:25:47 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Getting in instance
+11/01/2024 02:25:47 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 21, 55, 221000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'vWsHR-T2oqMpdmFMOG8qcX-9DepTjQ-bXb_Kii-7TjA', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:25:47 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Updating instance data
+11/01/2024 02:25:49 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Password reset email sent successfully
+11/01/2024 02:25:49 PM - INFO: 25335187-f7e0-44af-a4f9-8bce23e37d4c - Password reset email sent successfully in controller
+11/01/2024 02:26:52 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Recovery password in controller
+11/01/2024 02:26:52 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Getting user in db
+11/01/2024 02:26:53 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Password reset created token
+11/01/2024 02:26:53 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Updating instance data
+11/01/2024 02:26:53 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Getting in instance
+11/01/2024 02:26:53 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 25, 47, 286000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'uQ5YCo5k_-bTbMSPu5-vCy4WL-E_Yfq6f0kuHsNACBM', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:26:53 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Updating instance data
+11/01/2024 02:26:54 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Password reset email sent successfully
+11/01/2024 02:26:54 PM - INFO: 5c64f658-e483-4c68-b11d-d07761f85e45 - Password reset email sent successfully in controller
+11/01/2024 02:27:31 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Recovery password in controller
+11/01/2024 02:27:31 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Getting user in db
+11/01/2024 02:27:31 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Password reset created token
+11/01/2024 02:27:31 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Updating instance data
+11/01/2024 02:27:31 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Getting in instance
+11/01/2024 02:27:32 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 26, 53, 135000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'Ov9U2v3F_LsEHIWUSdcDGRCyXFx5bajmAlM06qWwwzs', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:27:32 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Updating instance data
+11/01/2024 02:27:33 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Password reset email sent successfully
+11/01/2024 02:27:33 PM - INFO: d019a2d4-1167-4ec4-b1d4-80a085afc154 - Password reset email sent successfully in controller
+11/01/2024 02:28:28 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Recovery password in controller
+11/01/2024 02:28:28 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Getting user in db
+11/01/2024 02:28:30 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Password reset created token
+11/01/2024 02:28:30 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Updating instance data
+11/01/2024 02:28:30 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Getting in instance
+11/01/2024 02:28:30 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 27, 32, 31000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'tD40yhdkTtFWQR1RXb5d0CAxlN48IlLwaTyX0XPTYA8', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:28:30 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Updating instance data
+11/01/2024 02:28:31 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Password reset email sent successfully
+11/01/2024 02:28:31 PM - INFO: 369583b4-d6f6-4899-81a7-dbbdae105575 - Password reset email sent successfully in controller
+11/01/2024 02:29:21 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Recovery password in controller
+11/01/2024 02:29:21 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Getting user in db
+11/01/2024 02:29:22 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Password reset created token
+11/01/2024 02:29:22 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Updating instance data
+11/01/2024 02:29:22 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Getting in instance
+11/01/2024 02:29:22 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 28, 30, 92000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'dxtCkvpFrCsnTdK2qyX_xXjRdzWWHkGmySTHlXzLD4Y', 'is_verified': False, 'verification_token': None}
+11/01/2024 02:29:22 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Updating instance data
+11/01/2024 02:29:24 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Password reset email sent successfully
+11/01/2024 02:29:24 PM - INFO: a72e9a95-6035-43fe-99ca-74c6cfa56a57 - Password reset email sent successfully in controller
+11/01/2024 02:30:02 PM - INFO: a0540983-b165-450a-a078-b82373c7e95e - Creating user in controller
+11/01/2024 02:30:02 PM - INFO: a0540983-b165-450a-a078-b82373c7e95e - Check user in db
+11/01/2024 02:30:02 PM - ERROR: a0540983-b165-450a-a078-b82373c7e95e - Error: Parameter error - There is already a user with that username - LocationError.Body
+11/01/2024 02:30:11 PM - INFO: 690f80fe-2e09-400c-8cc1-e79ae15661ef - Creating user in controller
+11/01/2024 02:30:11 PM - INFO: 690f80fe-2e09-400c-8cc1-e79ae15661ef - Check user in db
+11/01/2024 02:30:12 PM - INFO: 690f80fe-2e09-400c-8cc1-e79ae15661ef - Creating in instance
+11/01/2024 02:30:12 PM - INFO: 690f80fe-2e09-400c-8cc1-e79ae15661ef - Instance created: id='7316e380-4a60-4a43-8787-f06c5cd4f815' create_at=datetime.datetime(2024, 11, 1, 19, 30, 12, 295214) update_at=datetime.datetime(2024, 11, 1, 19, 30, 12, 295214) is_deleted=False username='juana1231' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve' is_verified=False verification_token='GjfM8TOP35_NyvpmDF8_BA6wm5wS0PRJxmYeAQcyRHQ' refresh_token=None password_token=None
+11/01/2024 02:30:13 PM - INFO: 690f80fe-2e09-400c-8cc1-e79ae15661ef - User created in service
+11/01/2024 02:30:13 PM - INFO: 690f80fe-2e09-400c-8cc1-e79ae15661ef - User created in controller
+11/01/2024 02:31:00 PM - INFO: a155422a-f035-406a-ab28-2965ea7f52d9 - Login user in controller
+11/01/2024 02:31:00 PM - INFO: a155422a-f035-406a-ab28-2965ea7f52d9 - Getting user in db
+11/01/2024 02:31:00 PM - ERROR: a155422a-f035-406a-ab28-2965ea7f52d9 - Error: Invalid credentials - Incorrect username or password - LocationError.Body
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Verifying email address
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Check user in db
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Getting in instance
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': False, 'verification_token': 'GjfM8TOP35_NyvpmDF8_BA6wm5wS0PRJxmYeAQcyRHQ', 'refresh_token': None, 'password_token': None}
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Verify that the authenticated user can only access
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Updating instance data
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Getting in instance
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': False, 'verification_token': 'GjfM8TOP35_NyvpmDF8_BA6wm5wS0PRJxmYeAQcyRHQ', 'refresh_token': None, 'password_token': None}
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - Updating instance data
+11/01/2024 02:31:09 PM - INFO: f1c56b65-b9fe-46a2-a299-4d37caf71f8d - User verified in db
+11/01/2024 02:31:18 PM - INFO: e98aa749-976d-49f8-84dd-c6760243b441 - Login user in controller
+11/01/2024 02:31:18 PM - INFO: e98aa749-976d-49f8-84dd-c6760243b441 - Getting user in db
+11/01/2024 02:31:18 PM - ERROR: e98aa749-976d-49f8-84dd-c6760243b441 - Error: Invalid credentials - Incorrect username or password - LocationError.Body
+11/01/2024 02:31:26 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - Login user in controller
+11/01/2024 02:31:26 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - Getting user in db
+11/01/2024 02:31:26 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - Updating instance data
+11/01/2024 02:31:26 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - Getting in instance
+11/01/2024 02:31:26 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 31, 9, 535000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': None, 'password_token': None}
+11/01/2024 02:31:26 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - Updating instance data
+11/01/2024 02:31:27 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - User logged in service
+11/01/2024 02:31:27 PM - INFO: ae0891d7-0e3b-4174-9233-3fb1c8c1dd3b - User logged in controller
+11/01/2024 02:49:58 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - Login user in controller
+11/01/2024 02:49:58 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - Getting user in db
+11/01/2024 02:49:59 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - Updating instance data
+11/01/2024 02:49:59 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - Getting in instance
+11/01/2024 02:49:59 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 31, 26, 882000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': None, 'password_token': None}
+11/01/2024 02:49:59 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - Updating instance data
+11/01/2024 02:49:59 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - User logged in service
+11/01/2024 02:49:59 PM - INFO: 99223abf-4e7a-4a98-9532-f1a747c75949 - User logged in controller
+11/01/2024 02:51:42 PM - INFO: 50c1b97b-b8a8-4344-83ba-988df0906653 - Refresh token in controller
+11/01/2024 02:51:42 PM - INFO: 50c1b97b-b8a8-4344-83ba-988df0906653 - Verifying refresh token
+11/01/2024 02:51:42 PM - ERROR: 50c1b97b-b8a8-4344-83ba-988df0906653 - Error: Unauthorized error - Token has expired - LocationError.Headers
+11/01/2024 02:52:09 PM - INFO: b3f52150-ad3f-4704-bdd7-b649374fc9b5 - Refresh token in controller
+11/01/2024 02:52:09 PM - INFO: b3f52150-ad3f-4704-bdd7-b649374fc9b5 - Verifying refresh token
+11/01/2024 02:52:09 PM - ERROR: b3f52150-ad3f-4704-bdd7-b649374fc9b5 - Error: Unauthorized error - Token has expired - LocationError.Headers
+11/01/2024 02:52:51 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - Login user in controller
+11/01/2024 02:52:51 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - Getting user in db
+11/01/2024 02:52:53 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - Updating instance data
+11/01/2024 02:52:53 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - Getting in instance
+11/01/2024 02:52:53 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 49, 59, 667000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': None, 'password_token': None}
+11/01/2024 02:52:53 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - Updating instance data
+11/01/2024 02:52:53 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - User logged in service
+11/01/2024 02:52:53 PM - INFO: a54bbe8f-1d4e-49bc-a035-b0c20e7db31e - User logged in controller
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Refresh token in controller
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Verifying refresh token
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Getting in instance
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 52, 53, 255000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczMTZlMzgwLTRhNjAtNGE0My04Nzg3LWYwNmM1Y2Q0ZjgxNSIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzEiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzEwOTU1NzN9.GEfOJsoKMxGiU1VnEMi-ECqCR0X8jeXm1ofPcUCsJiA', 'password_token': None}
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Updating instance data
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Getting in instance
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 52, 53, 255000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczMTZlMzgwLTRhNjAtNGE0My04Nzg3LWYwNmM1Y2Q0ZjgxNSIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzEiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzEwOTU1NzN9.GEfOJsoKMxGiU1VnEMi-ECqCR0X8jeXm1ofPcUCsJiA', 'password_token': None}
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Updating instance data
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Token refreshed in service
+11/01/2024 02:53:13 PM - INFO: 5e17b831-9ed8-40c6-a112-6dc5751cfcfb - Token refreshed in controller
+11/01/2024 03:00:08 PM - ERROR: 34e473d6-c239-4374-9e32-60518138fa8e - Error: Unauthorized error - Invalid token or signature verification failed - LocationError.Headers
+11/01/2024 03:00:37 PM - ERROR: 9c07cef8-20f8-451a-b320-b9448031455e - Error: Unauthorized error - Invalid token or signature verification failed - LocationError.Headers
+11/01/2024 03:01:36 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Logging out user in controller
+11/01/2024 03:01:36 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Getting user in db
+11/01/2024 03:01:36 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Getting in instance
+11/01/2024 03:01:37 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 53, 13, 762000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczMTZlMzgwLTRhNjAtNGE0My04Nzg3LWYwNmM1Y2Q0ZjgxNSIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzEiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzEwOTU1OTN9.9DpbMN666JhQFSLRemG0jkkOZ6kBnV4D0vfe_DZOa-s', 'password_token': None}
+11/01/2024 03:01:37 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Updating instance data
+11/01/2024 03:01:37 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Getting in instance
+11/01/2024 03:01:37 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Instance found: {'_id': '7316e380-4a60-4a43-8787-f06c5cd4f815', 'create_at': datetime.datetime(2024, 11, 1, 19, 30, 12, 295000), 'update_at': datetime.datetime(2024, 11, 1, 19, 53, 13, 762000), 'is_deleted': False, 'username': 'juana1231', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$RTpwbrq17d4e9rmue2A.uuy/SXTzNRSx9TQdJKsjtdxWkFHaRJTve', 'is_verified': True, 'verification_token': None, 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczMTZlMzgwLTRhNjAtNGE0My04Nzg3LWYwNmM1Y2Q0ZjgxNSIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqdWFuYTEyMzEiLCJmdWxsX25hbWUiOiJqdWFuYSBjYXN0cm8iLCJleHAiOjE3MzEwOTU1OTN9.9DpbMN666JhQFSLRemG0jkkOZ6kBnV4D0vfe_DZOa-s', 'password_token': None}
+11/01/2024 03:01:37 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - Updating instance data
+11/01/2024 03:01:38 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - User logged out in service
+11/01/2024 03:01:38 PM - INFO: 8b4d775d-1e51-4dae-924d-f687c5c4cfd8 - User logged out in controller
+11/01/2024 03:27:26 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Recovery password in controller
+11/01/2024 03:27:26 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Getting user in db
+11/01/2024 03:27:27 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Password reset created token
+11/01/2024 03:27:27 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Updating instance data
+11/01/2024 03:27:27 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Getting in instance
+11/01/2024 03:27:27 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 19, 29, 22, 799000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'RJKMTlKIx7aYnS37giQms4W1plGnoFcHUtXa43F8KD0', 'is_verified': False, 'verification_token': None}
+11/01/2024 03:27:27 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Updating instance data
+11/01/2024 03:27:30 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Password reset email sent successfully
+11/01/2024 03:27:30 PM - INFO: 8b7f0b40-5cb5-4b65-b1d6-63b8ffde7dd9 - Password reset email sent successfully in controller
+11/01/2024 03:28:13 PM - INFO: 52229679-5fa8-42d3-95a5-510cc6d56635 - Creating user in controller
+11/01/2024 03:28:13 PM - INFO: 52229679-5fa8-42d3-95a5-510cc6d56635 - Check user in db
+11/01/2024 03:28:13 PM - INFO: 52229679-5fa8-42d3-95a5-510cc6d56635 - Creating in instance
+11/01/2024 03:28:13 PM - INFO: 52229679-5fa8-42d3-95a5-510cc6d56635 - Instance created: id='1ec3ef16-13b1-4399-87a2-c494b8d15e81' create_at=datetime.datetime(2024, 11, 1, 20, 28, 13, 759088) update_at=datetime.datetime(2024, 11, 1, 20, 28, 13, 759088) is_deleted=False username='juana1232' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$lmHZjhe47CLCCVzG0zU92.bAFmKVtknYdKPPkG/Gop9qWoi0rq9XW' is_verified=False verification_token='yNjh4xav3DXHI3LNnIFi0tU55GgDcx25OBoZRif6Geo' refresh_token=None password_token=None
+11/01/2024 03:28:15 PM - INFO: 52229679-5fa8-42d3-95a5-510cc6d56635 - User created in service
+11/01/2024 03:28:15 PM - INFO: 52229679-5fa8-42d3-95a5-510cc6d56635 - User created in controller
+11/01/2024 03:28:46 PM - INFO: 2eb14675-65af-4e79-bcf4-1f29dff66a62 - Verifying email address
+11/01/2024 03:28:46 PM - INFO: 2eb14675-65af-4e79-bcf4-1f29dff66a62 - Check user in db
+11/01/2024 03:28:46 PM - INFO: 2eb14675-65af-4e79-bcf4-1f29dff66a62 - Getting in instance
+11/01/2024 03:28:46 PM - INFO: 2eb14675-65af-4e79-bcf4-1f29dff66a62 - Instance found: {'_id': '1ec3ef16-13b1-4399-87a2-c494b8d15e81', 'create_at': datetime.datetime(2024, 11, 1, 20, 28, 13, 759000), 'update_at': datetime.datetime(2024, 11, 1, 20, 28, 13, 759000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$lmHZjhe47CLCCVzG0zU92.bAFmKVtknYdKPPkG/Gop9qWoi0rq9XW', 'is_verified': False, 'verification_token': 'yNjh4xav3DXHI3LNnIFi0tU55GgDcx25OBoZRif6Geo', 'refresh_token': None, 'password_token': None}
+11/01/2024 03:28:46 PM - INFO: 2eb14675-65af-4e79-bcf4-1f29dff66a62 - Verify that the authenticated user can only access
+11/01/2024 03:28:46 PM - ERROR: 2eb14675-65af-4e79-bcf4-1f29dff66a62 - Error: Unauthorized error - Invalid token - LocationError.Body
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Verifying email address
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Check user in db
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Getting in instance
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Instance found: {'_id': '1ec3ef16-13b1-4399-87a2-c494b8d15e81', 'create_at': datetime.datetime(2024, 11, 1, 20, 28, 13, 759000), 'update_at': datetime.datetime(2024, 11, 1, 20, 28, 13, 759000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$lmHZjhe47CLCCVzG0zU92.bAFmKVtknYdKPPkG/Gop9qWoi0rq9XW', 'is_verified': False, 'verification_token': 'yNjh4xav3DXHI3LNnIFi0tU55GgDcx25OBoZRif6Geo', 'refresh_token': None, 'password_token': None}
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Verify that the authenticated user can only access
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Updating instance data
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Getting in instance
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Instance found: {'_id': '1ec3ef16-13b1-4399-87a2-c494b8d15e81', 'create_at': datetime.datetime(2024, 11, 1, 20, 28, 13, 759000), 'update_at': datetime.datetime(2024, 11, 1, 20, 28, 13, 759000), 'is_deleted': False, 'username': 'juana1232', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$lmHZjhe47CLCCVzG0zU92.bAFmKVtknYdKPPkG/Gop9qWoi0rq9XW', 'is_verified': False, 'verification_token': 'yNjh4xav3DXHI3LNnIFi0tU55GgDcx25OBoZRif6Geo', 'refresh_token': None, 'password_token': None}
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - Updating instance data
+11/01/2024 03:28:54 PM - INFO: b1dd4859-f3aa-4ee9-bd8c-90785f990a36 - User verified in db
+11/01/2024 03:31:20 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Recovery password in controller
+11/01/2024 03:31:20 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Getting user in db
+11/01/2024 03:31:21 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Password reset created token
+11/01/2024 03:31:21 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Updating instance data
+11/01/2024 03:31:21 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Getting in instance
+11/01/2024 03:31:21 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 20, 27, 27, 521000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'w5RmVJdN4C8_tWs1M70-ifYqaF26eC7VswZnKGxvGJ0', 'is_verified': False, 'verification_token': None}
+11/01/2024 03:31:21 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Updating instance data
+11/01/2024 03:31:23 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Password reset email sent successfully
+11/01/2024 03:31:23 PM - INFO: 460a09a4-4f2a-4c77-8c32-1d83f0ea5933 - Password reset email sent successfully in controller
+11/01/2024 03:32:08 PM - INFO: c92316aa-b75f-413d-b6ac-a2d392381e25 - Creating user in controller
+11/01/2024 03:32:08 PM - INFO: c92316aa-b75f-413d-b6ac-a2d392381e25 - Check user in db
+11/01/2024 03:32:08 PM - INFO: c92316aa-b75f-413d-b6ac-a2d392381e25 - Creating in instance
+11/01/2024 03:32:09 PM - INFO: c92316aa-b75f-413d-b6ac-a2d392381e25 - Instance created: id='82ccae15-3c26-4b87-bccd-c86d991d250b' create_at=datetime.datetime(2024, 11, 1, 20, 32, 8, 934541) update_at=datetime.datetime(2024, 11, 1, 20, 32, 8, 934541) is_deleted=False username='juana1233' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$gvQ/sK7RxINnH98sAog5wOj/VEGBbQye0JtmkA9xbHhu9PM72Nn2y' is_verified=False verification_token='G42giO-vJ9xY8SFtOh2papKfsEPi6PldivCF_NsQejs' refresh_token=None password_token=None
+11/01/2024 03:32:11 PM - INFO: c92316aa-b75f-413d-b6ac-a2d392381e25 - User created in service
+11/01/2024 03:32:11 PM - INFO: c92316aa-b75f-413d-b6ac-a2d392381e25 - User created in controller
+11/01/2024 04:05:59 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Recovery password in controller
+11/01/2024 04:05:59 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Getting user in db
+11/01/2024 04:06:00 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Password reset created token
+11/01/2024 04:06:00 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Updating instance data
+11/01/2024 04:06:00 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Getting in instance
+11/01/2024 04:06:00 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 20, 31, 21, 290000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'RRlr2vU5koGUAgHuPTj9fnwsMRXENnkDYcfDkhNSzYM', 'is_verified': False, 'verification_token': None}
+11/01/2024 04:06:00 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Updating instance data
+11/01/2024 04:06:02 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Password reset email sent successfully
+11/01/2024 04:06:02 PM - INFO: 0fcf74bc-1b6b-4372-8a35-0c820f11ed7e - Password reset email sent successfully in controller
+11/01/2024 04:06:37 PM - INFO: a41e8a35-47f3-467d-a31a-c7364aa535e9 - Creating user in controller
+11/01/2024 04:06:37 PM - INFO: a41e8a35-47f3-467d-a31a-c7364aa535e9 - Check user in db
+11/01/2024 04:06:37 PM - INFO: a41e8a35-47f3-467d-a31a-c7364aa535e9 - Creating in instance
+11/01/2024 04:06:37 PM - INFO: a41e8a35-47f3-467d-a31a-c7364aa535e9 - Instance created: id='748f0a92-0ba7-4112-b6c4-8d8ec660c627' create_at=datetime.datetime(2024, 11, 1, 21, 6, 37, 872028) update_at=datetime.datetime(2024, 11, 1, 21, 6, 37, 872028) is_deleted=False username='juana1233' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$CJX.EtKHc28pGfZa9TWUuu3J3H.jP24UxhXlrFvtZbN3FrNyCwXB.' is_verified=False verification_token='cL_0OC1FEv48RgjJdRDUKrk6d2qaD29MgdKhtQWStMo' refresh_token=None password_token=None
+11/01/2024 04:06:40 PM - INFO: a41e8a35-47f3-467d-a31a-c7364aa535e9 - User created in service
+11/01/2024 04:06:40 PM - INFO: a41e8a35-47f3-467d-a31a-c7364aa535e9 - User created in controller
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Verifying email address
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Check user in db
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Getting in instance
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Instance found: {'_id': '748f0a92-0ba7-4112-b6c4-8d8ec660c627', 'create_at': datetime.datetime(2024, 11, 1, 21, 6, 37, 872000), 'update_at': datetime.datetime(2024, 11, 1, 21, 6, 37, 872000), 'is_deleted': False, 'username': 'juana1233', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$CJX.EtKHc28pGfZa9TWUuu3J3H.jP24UxhXlrFvtZbN3FrNyCwXB.', 'is_verified': False, 'verification_token': 'cL_0OC1FEv48RgjJdRDUKrk6d2qaD29MgdKhtQWStMo', 'refresh_token': None, 'password_token': None}
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Verify that the authenticated user can only access
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Updating instance data
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Getting in instance
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Instance found: {'_id': '748f0a92-0ba7-4112-b6c4-8d8ec660c627', 'create_at': datetime.datetime(2024, 11, 1, 21, 6, 37, 872000), 'update_at': datetime.datetime(2024, 11, 1, 21, 6, 37, 872000), 'is_deleted': False, 'username': 'juana1233', 'full_name': 'juana castro', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$CJX.EtKHc28pGfZa9TWUuu3J3H.jP24UxhXlrFvtZbN3FrNyCwXB.', 'is_verified': False, 'verification_token': 'cL_0OC1FEv48RgjJdRDUKrk6d2qaD29MgdKhtQWStMo', 'refresh_token': None, 'password_token': None}
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - Updating instance data
+11/01/2024 04:07:27 PM - INFO: 7e411b38-2105-4ee0-9ec6-780d138555b3 - User verified in db
+11/01/2024 04:07:43 PM - INFO: af4b425f-0f31-40b0-bae6-837f2b11679a - Creating user in controller
+11/01/2024 04:07:43 PM - INFO: af4b425f-0f31-40b0-bae6-837f2b11679a - Check user in db
+11/01/2024 04:07:44 PM - INFO: af4b425f-0f31-40b0-bae6-837f2b11679a - Creating in instance
+11/01/2024 04:07:44 PM - INFO: af4b425f-0f31-40b0-bae6-837f2b11679a - Instance created: id='936f7cfc-c6ae-48b2-85e2-33a2105008fd' create_at=datetime.datetime(2024, 11, 1, 21, 7, 44, 56620) update_at=datetime.datetime(2024, 11, 1, 21, 7, 44, 56620) is_deleted=False username='juana1234' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$VWiwSq7160M0OubChm8.GuROqtn1dOdf8bWkSBCaN7.BFPSoFo5b2' is_verified=False verification_token='F5fs1KG5p6y3csuEmWrpkQPTkbXa4QeVyy7o-AgsBuM' refresh_token=None password_token=None
+11/01/2024 04:07:45 PM - INFO: af4b425f-0f31-40b0-bae6-837f2b11679a - User created in service
+11/01/2024 04:07:45 PM - INFO: af4b425f-0f31-40b0-bae6-837f2b11679a - User created in controller
+11/01/2024 04:38:24 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Recovery password in controller
+11/01/2024 04:38:24 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Getting user in db
+11/01/2024 04:38:25 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Password reset created token
+11/01/2024 04:38:25 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Updating instance data
+11/01/2024 04:38:25 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Getting in instance
+11/01/2024 04:38:25 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 21, 6, 0, 442000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'BITbufgHOxV-mtQ-DlRcjkjnZzUumAvuRZvRe39-4aI', 'is_verified': False, 'verification_token': None}
+11/01/2024 04:38:25 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Updating instance data
+11/01/2024 04:38:28 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Password reset email sent successfully
+11/01/2024 04:38:28 PM - INFO: 9dbd3e0d-2a99-40fa-bed0-313e40203b29 - Password reset email sent successfully in controller
+11/01/2024 04:43:34 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Recovery password in controller
+11/01/2024 04:43:34 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Getting user in db
+11/01/2024 04:43:35 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Password reset created token
+11/01/2024 04:43:35 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Updating instance data
+11/01/2024 04:43:35 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Getting in instance
+11/01/2024 04:43:35 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 21, 38, 25, 866000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'hY8ardRW1KkvcDZDuW_IMAMP4zizBXyXrWn_YcH_mUk', 'is_verified': False, 'verification_token': None}
+11/01/2024 04:43:35 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Updating instance data
+11/01/2024 04:43:38 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Password reset email sent successfully
+11/01/2024 04:43:38 PM - INFO: 5b049a07-7534-47ee-93ea-18063f980e80 - Password reset email sent successfully in controller
+11/01/2024 04:59:39 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Recovery password in controller
+11/01/2024 04:59:39 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Getting user in db
+11/01/2024 04:59:40 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Password reset created token
+11/01/2024 04:59:40 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Updating instance data
+11/01/2024 04:59:40 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Getting in instance
+11/01/2024 04:59:40 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 21, 43, 35, 698000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'EYOl1j1pitx7HYKZFlu8QFoBgQCwfs3xqTFqFXsoe2Y', 'is_verified': False, 'verification_token': None}
+11/01/2024 04:59:40 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Updating instance data
+11/01/2024 04:59:43 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Password reset email sent successfully
+11/01/2024 04:59:43 PM - INFO: 3f0f5731-03b4-4d5b-830d-a546a7e6ab57 - Password reset email sent successfully in controller
+11/01/2024 05:01:04 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Recovery password in controller
+11/01/2024 05:01:04 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Getting user in db
+11/01/2024 05:01:05 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Password reset created token
+11/01/2024 05:01:05 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Updating instance data
+11/01/2024 05:01:05 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Getting in instance
+11/01/2024 05:01:05 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Instance found: {'_id': '5f613245-2930-4068-9edb-4294e3ed56b3', 'create_at': datetime.datetime(2024, 10, 14, 0, 48, 23, 117000), 'update_at': datetime.datetime(2024, 11, 1, 21, 59, 40, 914000), 'is_deleted': False, 'username': 'anddyagudelo', 'full_name': 'anddy agudelo', 'email': 'websolutionsprojects@gmail.com', 'password': '$2b$12$09/NIc4qDWlDxElW/HCuf.vuNSn/cgRbt5VAQa7.nFdG.FgeKnJbq', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNjEzMjQ1LTI5MzAtNDA2OC05ZWRiLTQyOTRlM2VkNTZiMyIsImVtYWlsIjoid2Vic29sdXRpb25zcHJvamVjdHNAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhbmRkeWFndWRlbG8iLCJmdWxsX25hbWUiOiJhbmRkeSBhZ3VkZWxvIiwidHlwZSI6InJlZnJlc2giLCJleHAiOjE3MzA5MDYzMjJ9._Al-CMI97TPM21377JJRwlc5xQsWUnBy33TXCf3YGsk', 'password_token': 'grk3RwNxDUJB0Wd_5aP9dQ3cU7tKAMtZYZCJyWVygM8', 'is_verified': False, 'verification_token': None}
+11/01/2024 05:01:05 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Updating instance data
+11/01/2024 05:01:08 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Password reset email sent successfully
+11/01/2024 05:01:08 PM - INFO: e9128cab-3599-4f09-b2a4-7883d5221895 - Password reset email sent successfully in controller
+11/01/2024 05:05:13 PM - INFO: ee869d31-2175-4a93-8d99-1c70e3530f27 - Creating user in controller
+11/01/2024 05:05:13 PM - INFO: ee869d31-2175-4a93-8d99-1c70e3530f27 - Check user in db
+11/01/2024 05:05:14 PM - INFO: ee869d31-2175-4a93-8d99-1c70e3530f27 - Creating in instance
+11/01/2024 05:05:14 PM - INFO: ee869d31-2175-4a93-8d99-1c70e3530f27 - Instance created: id='95424133-2403-46f5-96de-3c679641edbc' create_at=datetime.datetime(2024, 11, 1, 22, 5, 14, 332449) update_at=datetime.datetime(2024, 11, 1, 22, 5, 14, 332449) is_deleted=False username='juana1235' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$VoGctkwf1DYF4t.wyzh1fuuTCs7OIdo7Iip37ZzFG0ZaWneMtS0IO' is_verified=False verification_token='XOErQ1xJMia3l1WhrdtLBF8GfAzw3Abmep-rJ4-2_eE' refresh_token=None password_token=None
+11/01/2024 05:05:14 PM - ERROR: ee869d31-2175-4a93-8d99-1c70e3530f27 - Error: Unexpected error - email_verification_messsage.html - LocationError.Server
+11/01/2024 05:05:35 PM - INFO: 31cfd66f-eaae-4bff-afed-444fdfdca440 - Creating user in controller
+11/01/2024 05:05:35 PM - INFO: 31cfd66f-eaae-4bff-afed-444fdfdca440 - Check user in db
+11/01/2024 05:05:36 PM - ERROR: 31cfd66f-eaae-4bff-afed-444fdfdca440 - Error: Parameter error - There is already a user with that username - LocationError.Body
+11/01/2024 05:05:41 PM - INFO: 14d17635-a273-4d04-ad7c-288fd05e30f5 - Creating user in controller
+11/01/2024 05:05:41 PM - INFO: 14d17635-a273-4d04-ad7c-288fd05e30f5 - Check user in db
+11/01/2024 05:05:41 PM - INFO: 14d17635-a273-4d04-ad7c-288fd05e30f5 - Creating in instance
+11/01/2024 05:05:41 PM - INFO: 14d17635-a273-4d04-ad7c-288fd05e30f5 - Instance created: id='add014b3-e9d2-40cc-958c-9215ebc79171' create_at=datetime.datetime(2024, 11, 1, 22, 5, 41, 670712) update_at=datetime.datetime(2024, 11, 1, 22, 5, 41, 670712) is_deleted=False username='juana1238' full_name='juana castro' email='websolutionsprojects@gmail.com' password='$2b$12$l2N7wftwmmjn2weaMOgUy.etd79XS3vQcE.ISZqJrI1QjC7y5F0Ve' is_verified=False verification_token='BNrqH7oWRgoX6sjptksrJAWCuTrImZQ0mFTo4mj38zI' refresh_token=None password_token=None
+11/01/2024 05:05:43 PM - INFO: 14d17635-a273-4d04-ad7c-288fd05e30f5 - User created in service
+11/01/2024 05:05:43 PM - INFO: 14d17635-a273-4d04-ad7c-288fd05e30f5 - User created in controller

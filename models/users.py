@@ -9,7 +9,10 @@ class UsersModel(DBModels):
     full_name: str
     email: EmailStr
     password: str
+    is_verified: bool = False
+    verification_token: str | None
     refresh_token: str | None = None
+    password_token: str | None = None
 
 
 class TokenData(BaseModel):

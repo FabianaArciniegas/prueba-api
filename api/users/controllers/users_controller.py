@@ -32,6 +32,25 @@ async def create_user(
 
 
 @users_router.get(
+    path="/verify-email/",
+    tags=["users"],
+    description="Verify email address",
+)
+@response_handler()
+async def verify_email(
+        request: Request,
+        response: Response,
+        id: str,
+        token:str,
+        api_response: Annotated[ApiResponse, Depends(ApiResponse)]
+) -> ResponseModel:
+    api_response.logger.info('Verifying email address')
+    user_service = UsersService(request.app.database, api_response)
+    await user_service.verify_email(id, token)
+    return
+
+
+@users_router.get(
     path="/{user_id}",
     tags=["users"],
     description="Get user by id",
@@ -130,3 +149,23 @@ async def delete_user(
     api_response.logger.info(f'User deleted in controller')
     return
 
+
+@users_router.patch(
+    path="/change-password/{user_id}",
+    tags=["users"],
+    description="Update password",
+)
+@response_handler()
+async def change_password(
+        request: Request,
+        response: Response,
+        user_id: str,
+        password_data: ChangePasswordUserInput,
+        token_data: Annotated[TokenData, Depends(get_current_user)],
+        api_response: Annotated[ApiResponse, Depends(ApiResponse)]
+) -> ResponseModel[UserBasic]:
+    api_response.logger.info('Updating password in controller')
+    user_service = UsersService(request.app.database, api_response, token_data)
+    changed_password = await user_service.change_password(user_id, password_data)
+    api_response.logger.info(f'Password updated in controller')
+    return changed_password
